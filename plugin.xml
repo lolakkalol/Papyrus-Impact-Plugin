@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.alexander.thesis.tool.View"
+            id="com.alexander.thesis.tool.View"
+            name="Impact tool"
+            restorable="true">
+      </view>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated com.alexander.thesis.profile -->
+      <package
+            uri="http://com.alexander.thesis.profile/0.1.0/ImpactProfile.xmi"
+            class="ImpactProfile.ImpactProfilePackage"
+            genModel="model/com.alexander.thesis.profile.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="platform:/plugin/com.alexander.thesis/model/com.alexander.thesis.profile.uml#_QpU8ANU6Ee60Trxcrv9ozw"
+            uri="http://com.alexander.thesis.profile/0.1.0/ImpactProfile.xmi">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            iconpath="icons/plugin-icon.png"
+            name="Impact Profile"
+            path="platform:/plugin/com.alexander.thesis/model/com.alexander.thesis.profile.uml">
+      </profile>
+   </extension>
+
+</plugin>

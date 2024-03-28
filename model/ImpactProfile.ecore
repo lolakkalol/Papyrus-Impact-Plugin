@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ImpactProfile" nsURI="http://com.alexander.thesis.profile/0.1.0/ImpactProfile.xmi"
+    nsPrefix="ImpactProfile">
+  <eClassifiers xsi:type="ecore:EClass" name="VariabilityPoint">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Its goal is to act as a marker for the programmatic traversal that after this comes some choices"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Domain" ordered="false"
+        lowerBound="1" eType="#//Domains"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="MutualExclusion" ordered="false"
+        lowerBound="1" eType="#//localBool" defaultValueLiteral="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Domains">
+    <eLiterals name="Electronics"/>
+    <eLiterals name="Mechanical" value="1"/>
+    <eLiterals name="Software" value="2"/>
+    <eLiterals name="NA" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="localBool">
+    <eLiterals name="true"/>
+    <eLiterals name="false" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Choice">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Marks that the block that this stereotype is marked to is 1) mutualy exclusive with all other blocks on the same level and stereotype 2) that it is a choice &#xD;&#xA;"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Performance" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Real"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="PerformanceType" ordered="false"
+        lowerBound="1" eType="#//PerformanceTypes" defaultValueLiteral="NA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Power" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Real"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Costs" ordered="false"
+        upperBound="-1" eType="#//QuantityCost" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Selected" ordered="false"
+        lowerBound="1" eType="#//localBool" defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Multiplicity" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+        defaultValueLiteral="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PerformanceTypes">
+    <eLiterals name="MIPS"/>
+    <eLiterals name="MHz" value="1"/>
+    <eLiterals name="KB" value="2"/>
+    <eLiterals name="MB" value="3"/>
+    <eLiterals name="GB" value="4"/>
+    <eLiterals name="DMIPS" value="5"/>
+    <eLiterals name="Efficiency" value="6"/>
+    <eLiterals name="NA" value="7"/>
+    <eLiterals name="Dissipation" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="QuantityCost">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Quantity" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CostPerPart" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Real"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VariabilityModel">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Is used to identify the root model package of the variability model"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Model" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Model"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Includes">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="The dependancy  edge with this stereotypes means that the start element must have the end element selected inorder to function.&#xD;&#xA;Start element -> End element"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Dependency" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Dependency"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Excludes">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="The dependancy  edge with this stereotypes means that the start element must NOT have the end element selected inorder to function.&#xD;&#xA;Start element -> End element"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Dependency" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Dependency"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Goal">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Used on classes to set goals that either variabilitypoints or  their parents should achive"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Goal" ordered="false" lowerBound="1"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Real"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GoalType" ordered="false"
+        lowerBound="1" eType="#//GoalTypes" defaultValueLiteral="NA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GoalCheck" ordered="false"
+        lowerBound="1" eType="#//GoalChecks" defaultValueLiteral="NA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="GoalTypes">
+    <eLiterals name="Performance"/>
+    <eLiterals name="Cost" value="1"/>
+    <eLiterals name="Power" value="2"/>
+    <eLiterals name="NA" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="GoalChecks">
+    <eLiterals name="GT"/>
+    <eLiterals name="GTE" value="1"/>
+    <eLiterals name="LT" value="2"/>
+    <eLiterals name="LTE" value="3"/>
+    <eLiterals name="EQ" value="4"/>
+    <eLiterals name="NA" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="QuantityCostList">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CostList" ordered="false"
+        lowerBound="1" upperBound="-1" eType="#//QuantityCost" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>
