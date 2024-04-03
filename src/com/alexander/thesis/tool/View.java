@@ -321,13 +321,21 @@ public class View extends ViewPart {
 			public void widgetSelected(SelectionEvent e) {
 				EList<Class> vp = Util.findVariabilityPoints(systemContextElement);
 				EList<Class> goals =  Util.getAllGoals(variabilityModel);
+				EList<Class> requirements = Util.getAllRequirements(rootModel);
 
 				CSVWriter writer = null;
 
 				try {
 					writer = new CSVWriter(workspacePath.getAbsolutePath() + "\\" + str_project + "\\output.csv");
+					writer.print("-- Choices made --\r\n");
 					writer.writeSelectedToCSV(vp);
+					writer.printNewLine();
+					writer.print("-- Requirements --\r\n");
+					writer.printRequirements(requirements);
+					writer.printNewLine();
+					writer.print("-- Goals --\r\n");
 					writer.printGoals(goals);
+					writer.printNewLine();
 					writer.close();
 				} catch (IOException e1) {
 					e1.printStackTrace();
