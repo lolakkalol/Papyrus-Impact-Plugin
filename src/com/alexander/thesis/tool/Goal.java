@@ -120,43 +120,43 @@ public class Goal {
 		}
 
 		boolean satisfied = false;
-		
-		for(Association targetEdge : targetEdges) {
+
+		for (Association targetEdge : targetEdges) {
 			Class target = null;
-			
+
 			// Get the target of the goal
 			for (Property property : targetEdge.getMemberEnds()) {
 				Type type = property.getType();
 				if (!(type instanceof Class))
 					throw new IllegalArgumentException(
 							"The goal: " + goal.getName() + " had an invalid target, must be a UML class!");
-	
+
 				// It found itself skip...
 				if (type.equals(goal))
 					continue;
-	
+
 				target = (Class) type;
 			}
-	
+
 			if (target == null)
 				throw new InternalError("Could not find the target of goal: " + goal.getName());
-	
+
 			// Check if variability point or normal
 			boolean variabilityPoint = VariabilityPoint.isVariabilityPoint(target);
-	
+
 			// If the target is a system and not a variabilityPoint, we need to check all
 			// the selected choices under the target and sum their costs before checking if
 			// the goal is satisfied.
 			if (!variabilityPoint)
 				satisfied = checkSystem(goal, target);
 			else
-				//Check if the variability point choice satisfies the goal
+				// Check if the variability point choice satisfies the goal
 				satisfied = checkVariabilityPoint(goal, target);
-			
+
 			if (satisfied)
 				return true;
 		}
-		
+
 		return false;
 	}
 
@@ -180,13 +180,13 @@ public class Goal {
 			throw new IllegalArgumentException("The goal: " + goal.getName() + " has the type: " + goalType_property
 					+ " while the target is not a variability point which is not allowed!");
 		if (goalType_property.equals(str_Cost)) {
-		// 	Get the total summed costs and check if they can satisfy the goal
+			// Get the total summed costs and check if they can satisfy the goal
 			List<QuantityCost> summedCosts = Util.getCostOfBranch(system);
 			return checkCost(summedCosts, goal_property, goalCheck_property);
 		} else {
-			
+
 			// Get and sum all selected choices power
-			EList<Class> variabilityPoints =  Util.findVariabilityPoints(system);
+			EList<Class> variabilityPoints = Util.findVariabilityPoints(system);
 			EList<Class> choices = VariabilityPoint.getAllSelectedChoices(variabilityPoints);
 			double total_power = Choice.getTotalPowerConsumption(choices);
 			return compareAxB(total_power, goal_property, goalCheck_property);
@@ -195,8 +195,8 @@ public class Goal {
 
 	/**
 	 * Given a goal, check if the variability point's choices can satisfy the goal.
-	 * Works for all types of goals but, all choices must satisfy the goal for the
-	 * goal to be deemed satisfied.
+	 * Works for all types of goals but, the sum of the choices property being
+	 * checked must satisfy the goal for the goal to be deemed satisfied.
 	 * 
 	 * @param goal             The goal to check
 	 * @param variabilityPoint The variability point whose choices are to be checked
@@ -209,43 +209,36 @@ public class Goal {
 		String goalCheck_property = getGoalCheck(goal);
 		String goalType_property = getGoalType(goal);
 
-		// Check if the variabilityPoint goal is satisfied
-		// Each choice must satisfy the goal in order for the goal to be deemed
-		// satisfied.
-		boolean satisfied = true;
-
+		// Check if the sum of the all selected choices under the variability point
+		// conform to the goal
 		EList<Class> choices = VariabilityPoint.getSelectedChoices(variabilityPoint);
 
-		for (Class choice : choices) {
-
-			switch (goalType_property) {
-			case str_Cost: {
-				satisfied = checkCost(Choice.getCosts(choice), goal_property, goalCheck_property);
-				break;
-			}
-
-			case str_Performance: {
-				satisfied = compareAxB(Choice.getPerformance(choice), goal_property, goalCheck_property);
-				break;
-			}
-
-			case str_Power: {
-				satisfied = compareAxB(Choice.getPower(choice), goal_property, goalCheck_property);
-				break;
-			}
-
-			case str_NA:
-				return false;
-
-			default:
-				throw new IllegalArgumentException("Unexpected value: " + goalType_property);
-			}
-
-			if (satisfied == false)
-				return satisfied;
+		switch (goalType_property) {
+		case str_Cost: {
+			List<QuantityCost> summed_cost = Choice.getCosts(choices);
+			return checkCost(summed_cost, goal_property, goalCheck_property);
 		}
 
-		return true;
+		case str_Performance: {
+			double total_performance = 0;
+			for (Class choice : choices)
+				total_performance += Choice.getPerformance(choice);
+			return compareAxB(total_performance, goal_property, goalCheck_property);
+		}
+
+		case str_Power: {
+			double total_power = 0;
+			for (Class choice : choices)
+				total_power += Choice.getPower(choice);
+			return compareAxB(total_power, goal_property, goalCheck_property);
+		}
+
+		case str_NA:
+			return false;
+
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + goalType_property);
+		}
 	}
 
 	/**
