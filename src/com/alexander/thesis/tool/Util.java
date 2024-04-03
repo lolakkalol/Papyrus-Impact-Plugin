@@ -15,6 +15,18 @@ import org.eclipse.uml2.uml.Stereotype;
 import org.eclipse.uml2.uml.Package;
 
 public class Util {
+
+	/**
+	 * Gets a stereotype from the umlElement argument
+	 * 
+	 * @param umlElement     The element which has the stereotype we want
+	 * @param str_stereotype The name of the stereotype we want to get from the
+	 *                       argument umlElement
+	 * @return The stereotype by the name ``str_stereotype``
+	 * @exception IllegalArgumentException Will throw an exception if ``umlElement``
+	 *                                     does not have the stereotype
+	 *                                     ``str_stereotype``
+	 */
 	public static Stereotype getStereotype(org.eclipse.uml2.uml.Element umlElement, String str_stereotype) {
 		Stereotype stereotype = umlElement.getAppliedStereotype(str_stereotype);
 
@@ -23,9 +35,10 @@ public class Util {
 
 		return stereotype;
 	}
-	
+
 	/**
 	 * Gets the total cost of all choices made under a system/class
+	 * 
 	 * @param umlClass The class/system to get the total cost of
 	 * @return The total cost of the class/system, will depend on
 	 */
@@ -34,14 +47,14 @@ public class Util {
 		EList<Class> sc = VariabilityPoint.getAllSelectedChoices(vp);
 		List<QuantityCost> costs = Choice.getCosts(sc);
 		List<QuantityCost> summedCosts = QuantityCost.getSum(costs);
-		
+
 		QuantityCost.sort(summedCosts);
-		
+
 		return summedCosts;
 	}
 
 	/**
-	 * Gets all modelling classes with the stereotype "VariabilityPoint"
+	 * Gets all modelling classes with the stereotype ``VariabilityPoint``
 	 * 
 	 * @param umlClass The root class to start the search from
 	 * @return A list of all found variability points
@@ -66,7 +79,7 @@ public class Util {
 	 * 
 	 * @param umlElement
 	 * @param stereotype The name of the stereotype
-	 * @return
+	 * @return If it the stereotype is applied or not
 	 */
 	public static boolean isStereotype(org.eclipse.uml2.uml.Element umlElement, String stereotype) {
 		if (umlElement.getAppliedStereotype(stereotype) == null)
@@ -115,8 +128,8 @@ public class Util {
 	}
 
 	/**
-	 * Gets all classes which composes the argument `c` through one associations level
-	 * down
+	 * Gets all classes which composes the argument `c` through one associations
+	 * level down
 	 * 
 	 * @param umlClass The UML2 Class we are looking for any associated classes
 	 * @return A list of UML Classes
@@ -163,8 +176,8 @@ public class Util {
 	}
 
 	/**
-	 * Adds an item to a list with the string "<Client name> -<Includes/Excludes>->
-	 * <Supplier name>"
+	 * Adds an item to a list with the string
+	 * "{@literal <Client name> -<Includes/Excludes>-> <Supplier name>}"
 	 * 
 	 * @param constraint A relationship with the stereotype Includes OR Excludes
 	 * @param list       A handle to the Java swing object to add the item to
@@ -182,14 +195,11 @@ public class Util {
 
 	}
 
-	// TODO: Change to return classes instead of PackagableElements
-
 	/**
-	 * Only pass in the model package where you know the goals will be to not search
-	 * through unnecessary packages
+	 * Gets all goals from a model package.
 	 * 
 	 * @param rootModel The start model to start looking for goals from
-	 * @return A list of goals
+	 * @return A list of goals found in the model
 	 */
 	public static EList<Class> getAllGoals(org.eclipse.uml2.uml.Model rootModel) {
 		EList<PackageableElement> elements = rootModel.getPackagedElements();
@@ -214,7 +224,7 @@ public class Util {
 				goals.addAll(getAllGoalsHelper(((Package) element).getPackagedElements()));
 
 			}
-			
+
 			// We are not interested in the element if it is not a package or a class so
 			// skip this iteration
 			if (!(element instanceof Class))
@@ -232,8 +242,6 @@ public class Util {
 
 		return goals;
 	}
-	
-	
 
 	/**
 	 * Same as the non-Named variant but this one handles NamedElements and not
@@ -275,13 +283,19 @@ public class Util {
 
 		return goals;
 	}
-	
+
+	/**
+	 * Gets all classes from the model in the ``rootModel`` argument
+	 * 
+	 * @param rootModel The model to start searching for classes from
+	 * @return A EList of classes
+	 */
 	public static EList<Class> getAllClasses(org.eclipse.uml2.uml.Package rootModel) {
 		EList<PackageableElement> elements = rootModel.getPackagedElements();
 
 		return getAllClassesHelper(elements);
 	}
-	
+
 	private static EList<Class> getAllClassesHelper(EList<PackageableElement> elements) {
 		EList<Class> classes = new BasicEList<Class>();
 
@@ -299,7 +313,7 @@ public class Util {
 				classes.addAll(getAllClassesHelper(((Package) element).getPackagedElements()));
 
 			}
-			
+
 			// We are not interested in the element if it is not a package or a class so
 			// skip this iteration
 			if (!(element instanceof Class))
@@ -308,7 +322,7 @@ public class Util {
 			// Go through all of the classes owned elements (They can be classes which have
 			// the Goal stereotype)
 			classes.addAll(getAllClassesHelperNamed(((Class) element).getOwnedElements()));
-			
+
 			// Add element to classes
 			classes.add((Class) element);
 
@@ -356,25 +370,34 @@ public class Util {
 
 		return classes;
 	}
-	
-	
-	
+
+	/**
+	 * Gets all requirements in a specified model, will from there search for a
+	 * package named "requirements" (ignores case) and from there searches for all
+	 * requirements
+	 * 
+	 * @param rootModel The model to search for requirements from
+	 * @return A list of classes representing the requirements
+	 * @exception If the method could not find the requirements package
+	 */
 	public static EList<Class> getAllRequirements(Package rootModel) {
 		Package pkg_requirements = null;
 		EList<Class> requirements = new BasicEList<Class>();
-		
+
+		// Find the requirements package
 		for (Package pkg : rootModel.getNestedPackages())
-			if (pkg.getName().equals("Requirements"))
+			if (pkg.getName().equalsIgnoreCase("Requirements"))
 				pkg_requirements = pkg;
-		
+
 		if (pkg_requirements == null)
 			throw new InternalError("Could not find the requirements package!");
-		
+
+		// For each class in the requirements package see if it is a requirement and add
+		// it to the requirements list if it is
 		for (Class c : Util.getAllClasses(pkg_requirements))
-				if (Requirement.isRequirement(c))
-					requirements.add(c);
-					
-				
+			if (Requirement.isRequirement(c))
+				requirements.add(c);
+
 		return requirements;
 	}
 }

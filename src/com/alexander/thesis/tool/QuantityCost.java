@@ -13,9 +13,10 @@ public class QuantityCost {
 		this.quantity = quantity;
 		this.cost = cost;
 	}
-	
+
 	/**
 	 * Sorts the quantity list supplied by quantity in ascending order
+	 * 
 	 * @param quantityCosts A list of QuantityCost objects
 	 */
 	public static void sort(List<QuantityCost> quantityCosts) {
@@ -29,10 +30,10 @@ public class QuantityCost {
 	public String toString() {
 		return "Quantity: " + this.quantity + " Cost: " + this.cost;
 	}
-	
+
 	/**
 	 * Sums the costs of each quantity which are the same and saves it in a list of
-	 * QuantityCost
+	 * QuantityCosts
 	 * 
 	 * @param quantityCosts A list of QuantityCost to be summed
 	 * @return A list of summed QuantityCosts

@@ -12,6 +12,7 @@ enum constraint_type {
 }
 
 public class Constraint {
+	/// Qualified names of the constraint stereotypes
 	public static final String str_Includes_stereotype = "ImpactProfile::Includes";
 	public static final String str_Excludes_stereotype = "ImpactProfile::Excludes";
 
@@ -29,10 +30,10 @@ public class Constraint {
 	}
 
 	/**
-	 * Returns an enum representing which type of constraint the dependency had
+	 * Gets the type of the constraint
 	 * 
 	 * @param constraint A dependency edge
-	 * @return constraint_type
+	 * @return The type of the constraint as a constraint_type
 	 */
 	public static constraint_type getType(org.eclipse.uml2.uml.Dependency constraint) {
 		EList<Stereotype> stereotype_list = constraint.getAppliedStereotypes();
@@ -57,17 +58,29 @@ public class Constraint {
 		return constraint_type.none;
 
 	}
-	
+
+	/**
+	 * Gets the stereotype of the dependency relationship argument ``constraint``.
+	 * Retrieves the different constraint stereotypes defined in the impact tool
+	 * profile.
+	 * 
+	 * @param constraint The dependency relation ship to retrive the stereotype from
+	 * @return Either the ``Includes`` or ``Excludes`` stereotype of the constraint
+	 *         argument
+	 * @exception IllegalArgumentException Throws if the constraint argument does
+	 *                                     not have either the ``Includes`` or
+	 *                                     ``Excludes`` stereotype applied
+	 */
 	public static Stereotype getStereotype(org.eclipse.uml2.uml.Dependency constraint) {
 		constraint_type type = getType(constraint);
-		
+
 		switch (type) {
 		case includes:
 			return Util.getStereotype(constraint, str_Includes_stereotype);
-			
+
 		case excludes:
 			return Util.getStereotype(constraint, str_Excludes_stereotype);
-			
+
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + type);
 		}
@@ -77,7 +90,7 @@ public class Constraint {
 	 * Check if the dependency edge has the stereotype Includes
 	 * 
 	 * @param constraint The dependency edge
-	 * @return true if true, else false
+	 * @return Returns true if the ``Includes`` stereotype is applied, else false
 	 */
 	public static boolean isIncludes(org.eclipse.uml2.uml.Dependency constraint) {
 		if (getType(constraint) == constraint_type.includes)
@@ -90,7 +103,7 @@ public class Constraint {
 	 * Check if the dependency edge has the stereotype Excludes
 	 * 
 	 * @param constraint The dependency edge
-	 * @return true if true, else false
+	 * @return Returns true if the ``Excludes`` stereotype is applied, else false
 	 */
 	public static boolean isExcludes(org.eclipse.uml2.uml.Dependency constraint) {
 		if (getType(constraint) == constraint_type.excludes)
@@ -101,9 +114,9 @@ public class Constraint {
 
 	/**
 	 * Takes a list of relationships which are constraints and return all which are
-	 * not satisfied. OBS! Assumes that the client is selected.
+	 * not satisfied. This method assumes that the client is selected.
 	 * 
-	 * @param constraints to be checked
+	 * @param constraints A list of constraints to be checked
 	 * @return A EList of failed constraints
 	 */
 	public static EList<Dependency> checkConstraints(EList<Dependency> constraints) {
@@ -163,17 +176,17 @@ public class Constraint {
 
 		return failedConstraints;
 	}
-	
+
 	/**
-	 * Prints the selected constraint in the format "<Client name>
-	 * -<Includes/Excludes>-> <Supplier name>"
+	 * Prints the selected constraint in the format
+	 * "{@literal <Client name> -<Includes/Excludes>-> <Supplier name>}"
 	 * 
 	 * @param constraint
 	 */
 	public static void printConstraint(Dependency constraint) {
 		EList<NamedElement> clients = constraint.getClients();
 		EList<NamedElement> suppliers = constraint.getSuppliers();
-		
+
 		if (clients.size() != 1 || suppliers.size() != 1)
 			throw new IllegalArgumentException("Supplied constraint with too many cliens and/or suppliers!");
 

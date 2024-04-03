@@ -269,6 +269,16 @@ public class Goal {
 		return satisfied;
 	}
 
+	/**
+	 * Compares the arguments ``a`` and ``b`` depending on the string ``check``. The
+	 * different allowed strings is defined in: str_GT, str_GTE, str_LT, str_LTE,
+	 * and str_EQ.
+	 * 
+	 * @param a
+	 * @param b
+	 * @param check
+	 * @return
+	 */
 	private static boolean compareAxB(double a, double b, String check) {
 		switch (check) {
 		case str_GT:
@@ -289,8 +299,5 @@ public class Goal {
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + check);
 		}
-	}
-
-	public static void satisfied(EList<org.eclipse.uml2.uml.Class> goals) {
 	}
 }

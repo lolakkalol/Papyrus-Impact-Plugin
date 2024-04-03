@@ -41,7 +41,10 @@ public class View extends ViewPart {
 	public View() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	/**
+	 * This method creates all control elements in the view for the plugg-in
+	 */
 	@Override
 	public void createPartControl(Composite parent) {
 
@@ -317,25 +320,18 @@ public class View extends ViewPart {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				EList<Class> vp = Util.findVariabilityPoints(systemContextElement);
-				EList<Class> sc = VariabilityPoint.getAllSelectedChoices(vp);
+				EList<Class> goals =  Util.getAllGoals(variabilityModel);
 
 				CSVWriter writer = null;
 
 				try {
 					writer = new CSVWriter(workspacePath.getAbsolutePath() + "\\" + str_project + "\\output.csv");
-					System.out.println("----------------------------------------------");
-					System.out.println(workspacePath.getAbsolutePath() + "\\" + str_project + "\\output.csv");
-					System.out.println("----------------------------------------------");
 					writer.writeSelectedToCSV(vp);
+					writer.printGoals(goals);
 					writer.close();
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
-
-				System.out.println("-------");
-				System.out.println(sc.get(4).getName());
-				System.out.println(Choice.getPerformance(sc.get(4)));
-				System.out.println("-------");
 
 				try {
 					writer.close();
