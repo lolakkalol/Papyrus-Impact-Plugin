@@ -1,0 +1,23 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Impact analysis tool and variability meta-model for
+  eclipse papyrus
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Alexander
+    family-names: Stenlund
+    email: alexander.stenlund@telia.com
+repository-code: 'https://github.com/lolakkalol/Papyrus-Impact-Plugin'
+keywords:
+  - Papyrus
+  - Eclipse
+  - Java
+  - MBSE
+  - Impact analysis
+  - Engineering choice analysis
