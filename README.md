@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/lolakkalol/Papyrus-Impact-Plugin">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="icons/plugin-icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">A Papyrus impact and variability plugin</h3>
