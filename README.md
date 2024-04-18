@@ -86,7 +86,7 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 This plugin implements a UML2 meta-model to create variable product composition diagrams using the SysML block definition diagrams.
 The plugin also implements a new view called the "Impact tool," which uses the information provided by the meta-model to check constraints, goals, requirements, and more.
-To use the impact tool, one must follow the rules to ensure that the assumption made by the tool still holds. 
+To use the impact tool, one must follow the rules to ensure that the assumption it makes still holds. While this is made with the use of papyrus in mind, it should work with any model created using UML2, as the plugin only relies on UML2 APIs but has not been tested.
 
 For more information on how the meta-model, tool, and method can be used to perform impact analysis, see: [Link to thesis (Not uploaded yet)](http://example.com/)
 
@@ -130,7 +130,12 @@ The repository is structured as follows:
 
 ### Modify the meta-model/profile
 The `model/com.alexander.thesis.profile.di` file contains the papyrus model used to edit the meta-model. To modify the meta-model, open the papyrus model and use the diagram editor provided by papyrus to make the required changes. 
-As the profile is included as a static UML2 profile multiple plugin extensions need to be defined, these are already made and does not need to be updated.
+As the profile is included as a static UML2 profile multiple plugin extensions need to be defined, these are already made and does not need to be updated but for the sake of documentation are mentioned here:
+
+- `org.eclipse.emf.ecore.generated_package`
+- `org.eclipse.uml2.uml.generated_package`
+- `org.eclipse.papyrus.uml.extensionpoints.UMLProfile` (Is only needed for papyrus to find the profile)
+
 To update the profile in the plugin follow these steps:
 <details>
   <summary>Update details</summary>
@@ -206,7 +211,8 @@ Project Link: [https://github.com/lolakkalol/Papyrus-Impact-Plugin](https://gith
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-To be written...
+How to add a UML2 profile to a plugin as a static profile:
+[http://nyssen.blogspot.com/2009/09/defining-static-profiles-with-eclipse.html](http://nyssen.blogspot.com/2009/09/defining-static-profiles-with-eclipse.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
