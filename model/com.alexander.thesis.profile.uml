@@ -74,7 +74,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_2g_pMuq1Ee6ak5-W21_kzw" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2g_pM-q1Ee6ak5-W21_kzw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2g_pM-q1Ee6ak5-W21_kzw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2g_pNOq1Ee6ak5-W21_kzw" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_2g_pLOq1Ee6ak5-W21_kzw" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_2g_pNuq1Ee6ak5-W21_kzw" name="VariabilityModel">
@@ -187,7 +187,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_dNbG4eLYEe6CooQ-ACpGPA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dNbG4uLYEe6CooQ-ACpGPA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dNbG4uLYEe6CooQ-ACpGPA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dNbG4-LYEe6CooQ-ACpGPA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_dNbG2-LYEe6CooQ-ACpGPA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_dNbG5eLYEe6CooQ-ACpGPA" name="VariabilityModel">
@@ -300,7 +300,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_4_dZYuHmEe6MCsIRtJTtOA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4_dZY-HmEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4_dZY-HmEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4_dZZOHmEe6MCsIRtJTtOA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_4_dZXOHmEe6MCsIRtJTtOA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_4_dZZuHmEe6MCsIRtJTtOA" name="VariabilityModel">
@@ -413,7 +413,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_7in2guHiEe6MCsIRtJTtOA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7in2g-HiEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7in2g-HiEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7in2hOHiEe6MCsIRtJTtOA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_7in2fOHiEe6MCsIRtJTtOA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_7in2huHiEe6MCsIRtJTtOA" name="VariabilityModel">
@@ -523,7 +523,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_18zdguHiEe6MCsIRtJTtOA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_18zdg-HiEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_18zdg-HiEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_18zdhOHiEe6MCsIRtJTtOA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_18zdfOHiEe6MCsIRtJTtOA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_18zdhuHiEe6MCsIRtJTtOA" name="VariabilityModel">
@@ -633,7 +633,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_OaJ9QuEfEe6MCsIRtJTtOA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OaJ9Q-EfEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OaJ9Q-EfEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_OaJ9ROEfEe6MCsIRtJTtOA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_OaJ9POEfEe6MCsIRtJTtOA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_OaJ9RuEfEe6MCsIRtJTtOA" name="VariabilityModel">
@@ -719,7 +719,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_WQplMeBrEe6MCsIRtJTtOA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WQplMuBrEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WQplMuBrEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_WQplM-BrEe6MCsIRtJTtOA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_WQplK-BrEe6MCsIRtJTtOA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_WQplNeBrEe6MCsIRtJTtOA" name="VariabilityModel">
@@ -805,7 +805,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_59enUuBmEe6MCsIRtJTtOA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59enU-BmEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_59enU-BmEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_59enVOBmEe6MCsIRtJTtOA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_59enTOBmEe6MCsIRtJTtOA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_59enVuBmEe6MCsIRtJTtOA" name="VariabilityModel">
@@ -890,7 +890,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_AwgNn90iEe6MCsIRtJTtOA" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_AwgNoN0iEe6MCsIRtJTtOA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AwgNod0iEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AwgNod0iEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_AwgNot0iEe6MCsIRtJTtOA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_AwgNlt0iEe6MCsIRtJTtOA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_AwgNpN0iEe6MCsIRtJTtOA" name="VariabilityModel">
@@ -974,7 +974,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_uxzuftyUEe6MCsIRtJTtOA" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_uxzuf9yUEe6MCsIRtJTtOA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uxzugNyUEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uxzugNyUEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uxzugdyUEe6MCsIRtJTtOA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_uxzuddyUEe6MCsIRtJTtOA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_uxzug9yUEe6MCsIRtJTtOA" name="VariabilityModel">
@@ -1058,7 +1058,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_gq5eLdyUEe6MCsIRtJTtOA" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_gq5eLtyUEe6MCsIRtJTtOA" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gq5eL9yUEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gq5eL9yUEe6MCsIRtJTtOA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gq5eMNyUEe6MCsIRtJTtOA" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_gq5eJNyUEe6MCsIRtJTtOA" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_gq5eMtyUEe6MCsIRtJTtOA" name="VariabilityModel">
@@ -1140,7 +1140,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_7uD9zNoIEe6ReJjNT01g2A" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_7uD9zdoIEe6ReJjNT01g2A" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7uD9ztoIEe6ReJjNT01g2A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7uD9ztoIEe6ReJjNT01g2A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7uD9z9oIEe6ReJjNT01g2A" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_7uD9w9oIEe6ReJjNT01g2A" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_7uD90doIEe6ReJjNT01g2A" name="VariabilityModel">
@@ -1222,7 +1222,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_faQw_NoIEe6ReJjNT01g2A" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_faQw_doIEe6ReJjNT01g2A" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_faQw_toIEe6ReJjNT01g2A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_faQw_toIEe6ReJjNT01g2A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_faQw_9oIEe6ReJjNT01g2A" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_faQw89oIEe6ReJjNT01g2A" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_faQxAdoIEe6ReJjNT01g2A" name="VariabilityModel">
@@ -1304,7 +1304,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_UBJjq9oIEe6ReJjNT01g2A" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_UBJjrNoIEe6ReJjNT01g2A" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UBJjrdoIEe6ReJjNT01g2A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UBJjrdoIEe6ReJjNT01g2A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_UBJjrtoIEe6ReJjNT01g2A" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_UBJjotoIEe6ReJjNT01g2A" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_UBJjsNoIEe6ReJjNT01g2A" name="VariabilityModel">
@@ -1383,7 +1383,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_3J_PTNoAEe6FQ7XXqEh7-w" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_3J_PTdoAEe6FQ7XXqEh7-w" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3J_PTtoAEe6FQ7XXqEh7-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3J_PTtoAEe6FQ7XXqEh7-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_3J_PT9oAEe6FQ7XXqEh7-w" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_3J_PQ9oAEe6FQ7XXqEh7-w" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_3J_PUdoAEe6FQ7XXqEh7-w" name="VariabilityModel">
@@ -1453,7 +1453,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_x8hE3NoAEe6FQ7XXqEh7-w" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_x8hE3doAEe6FQ7XXqEh7-w" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x8hE3toAEe6FQ7XXqEh7-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x8hE3toAEe6FQ7XXqEh7-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_x8hE39oAEe6FQ7XXqEh7-w" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_x8hE09oAEe6FQ7XXqEh7-w" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_x8hE4doAEe6FQ7XXqEh7-w" name="VariabilityModel">
@@ -1555,7 +1555,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_X6VATdn-Ee6FQ7XXqEh7-w" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_X6VATtn-Ee6FQ7XXqEh7-w" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X6VAT9n-Ee6FQ7XXqEh7-w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X6VAT9n-Ee6FQ7XXqEh7-w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_X6VAUNn-Ee6FQ7XXqEh7-w" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_X6VARNn-Ee6FQ7XXqEh7-w" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_X6VAUtn-Ee6FQ7XXqEh7-w" name="VariabilityModel">
@@ -1656,7 +1656,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_a1otH9n5Ee6uOeRnJtFzTQ" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_a1otINn5Ee6uOeRnJtFzTQ" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a1otIdn5Ee6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a1otIdn5Ee6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_a1otItn5Ee6uOeRnJtFzTQ" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_a1otFtn5Ee6uOeRnJtFzTQ" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_a1otJNn5Ee6uOeRnJtFzTQ" name="VariabilityModel">
@@ -1728,7 +1728,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_Wt54INn4Ee6uOeRnJtFzTQ" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_Wt54Idn4Ee6uOeRnJtFzTQ" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Wt54Itn4Ee6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Wt54Itn4Ee6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Wt54I9n4Ee6uOeRnJtFzTQ" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_Wt54F9n4Ee6uOeRnJtFzTQ" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_Wt54Jdn4Ee6uOeRnJtFzTQ" name="VariabilityModel">
@@ -1830,7 +1830,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_kRdOrdn2Ee6uOeRnJtFzTQ" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_kRdOrtn2Ee6uOeRnJtFzTQ" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kRdOr9n2Ee6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kRdOr9n2Ee6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_kRdOsNn2Ee6uOeRnJtFzTQ" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_kRdOpNn2Ee6uOeRnJtFzTQ" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_kRdOstn2Ee6uOeRnJtFzTQ" name="VariabilityModel">
@@ -1932,7 +1932,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_YVkrfdn2Ee6uOeRnJtFzTQ" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_YVkrftn2Ee6uOeRnJtFzTQ" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YVkrf9n2Ee6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YVkrf9n2Ee6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_YVkrgNn2Ee6uOeRnJtFzTQ" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_YVkrdNn2Ee6uOeRnJtFzTQ" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_YVkrgtn2Ee6uOeRnJtFzTQ" name="VariabilityModel">
@@ -2002,7 +2002,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_xXQunNnzEe6uOeRnJtFzTQ" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_xXQundnzEe6uOeRnJtFzTQ" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xXQuntnzEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xXQuntnzEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_xXQun9nzEe6uOeRnJtFzTQ" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_xXQuk9nzEe6uOeRnJtFzTQ" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_xXQuodnzEe6uOeRnJtFzTQ" name="VariabilityModel">
@@ -2072,7 +2072,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_MEigXNfBEe6uOeRnJtFzTQ" name="false" value="1"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEigXdfBEe6uOeRnJtFzTQ" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEigXtfBEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEigXtfBEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MEigX9fBEe6uOeRnJtFzTQ" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_MEigU9fBEe6uOeRnJtFzTQ" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_MEigYdfBEe6uOeRnJtFzTQ" name="VariabilityModel">
@@ -2128,7 +2128,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_l4vWodefEe6uOeRnJtFzTQ" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_l4vWotefEe6uOeRnJtFzTQ" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l4vWo9efEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l4vWo9efEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_l4vWpNefEe6uOeRnJtFzTQ" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_l4vWptefEe6uOeRnJtFzTQ" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_l4vWptefEe6uOeRnJtFzTQ" name="QuantityCost">
@@ -2198,7 +2198,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_sO3IAdebEe6uOeRnJtFzTQ" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_sO3IAtebEe6uOeRnJtFzTQ" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sO3IA9ebEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sO3IA9ebEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_sO3IBNebEe6uOeRnJtFzTQ" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_sO3IBtebEe6uOeRnJtFzTQ" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_sO3IBtebEe6uOeRnJtFzTQ" name="QuantityCost">
@@ -2268,7 +2268,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_9g-R0dcTEe6uOeRnJtFzTQ" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_9g-R0tcTEe6uOeRnJtFzTQ" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9g-R09cTEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9g-R09cTEe6uOeRnJtFzTQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_9g-R1NcTEe6uOeRnJtFzTQ" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_9g-R1tcTEe6uOeRnJtFzTQ" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_9g-R1tcTEe6uOeRnJtFzTQ" name="QuantityCost">
@@ -2332,7 +2332,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_Twt8QtYpEe6cArY7TwP1Eg" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_Twt8Q9YpEe6cArY7TwP1Eg" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Twt8RNYpEe6cArY7TwP1Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Twt8RNYpEe6cArY7TwP1Eg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Twt8RdYpEe6cArY7TwP1Eg" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_Twt8R9YpEe6cArY7TwP1Eg" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_Twt8R9YpEe6cArY7TwP1Eg" name="QuantityCost">
@@ -2396,7 +2396,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_GhEgktYoEe6AXfMCgABOig" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_GhEgk9YoEe6AXfMCgABOig" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GhEglNYoEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GhEglNYoEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GhEgldYoEe6AXfMCgABOig" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_GhEgl9YoEe6AXfMCgABOig" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_GhEgl9YoEe6AXfMCgABOig" name="QuantityCost">
@@ -2462,7 +2462,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_4BcOQdYnEe6AXfMCgABOig" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_4BcOQtYnEe6AXfMCgABOig" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4BcOQ9YnEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4BcOQ9YnEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4BcORNYnEe6AXfMCgABOig" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_4BcORtYnEe6AXfMCgABOig" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_4BcORtYnEe6AXfMCgABOig" name="QuantityCost">
@@ -2523,7 +2523,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_uY18UtYnEe6AXfMCgABOig" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_uY18U9YnEe6AXfMCgABOig" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uY18VNYnEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uY18VNYnEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uY18VdYnEe6AXfMCgABOig" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_uY18V9YnEe6AXfMCgABOig" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_uY18V9YnEe6AXfMCgABOig" name="QuantityCost">
@@ -2584,7 +2584,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_jnJ7YtYnEe6AXfMCgABOig" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_jnJ7Y9YnEe6AXfMCgABOig" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jnJ7ZNYnEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jnJ7ZNYnEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_jnJ7ZdYnEe6AXfMCgABOig" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_jnJ7Z9YnEe6AXfMCgABOig" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_jnJ7Z9YnEe6AXfMCgABOig" name="QuantityCost">
@@ -2645,7 +2645,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_33rDsdYmEe6AXfMCgABOig" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_33rDstYmEe6AXfMCgABOig" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_33rDs9YmEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_33rDs9YmEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_33rDtNYmEe6AXfMCgABOig" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_33rDttYmEe6AXfMCgABOig" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_33rDttYmEe6AXfMCgABOig" name="QuantityCost">
@@ -2706,7 +2706,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_WhjGItYeEe6AXfMCgABOig" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_WhjGI9YeEe6AXfMCgABOig" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WhjGJNYeEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WhjGJNYeEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_WhjGJdYeEe6AXfMCgABOig" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_WhjGJ9YeEe6AXfMCgABOig" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_WhjGJ9YeEe6AXfMCgABOig" name="QuantityCost">
@@ -2764,7 +2764,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_GudKcNVmEe6AXfMCgABOig" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_GudKcdVmEe6AXfMCgABOig" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GudKctVmEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GudKctVmEe6AXfMCgABOig" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GudKc9VmEe6AXfMCgABOig" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_GudKddVmEe6AXfMCgABOig" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_GudKddVmEe6AXfMCgABOig" name="QuantityCost">
@@ -2831,7 +2831,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_oXWm9tVWEe6pCd2qqtKa_w" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oXWm99VWEe6pCd2qqtKa_w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oXWm99VWEe6pCd2qqtKa_w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_oXWm-NVWEe6pCd2qqtKa_w" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_oXWm8NVWEe6pCd2qqtKa_w" containment="true"/>
         </eClassifiers>
       </contents>
@@ -2880,7 +2880,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_HlmtT9VEEe60Trxcrv9ozw" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_HlmtUNVEEe60Trxcrv9ozw" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlmtUdVEEe60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HlmtUdVEEe60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_HlmtUtVEEe60Trxcrv9ozw" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_HlmtVNVEEe60Trxcrv9ozw" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_HlmtVNVEEe60Trxcrv9ozw" name="QuantityCost">
@@ -2938,7 +2938,7 @@
           <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_uVlakNVDEe60Trxcrv9ozw" name="DMIPS" value="5"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_uVlakdVDEe60Trxcrv9ozw" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uVlaktVDEe60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uVlaktVDEe60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uVlak9VDEe60Trxcrv9ozw" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_uVlaldVDEe60Trxcrv9ozw" containment="true"/>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_uVlaldVDEe60Trxcrv9ozw" name="QuantityCost">
@@ -3004,7 +3004,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="__g1bFdVCEe60Trxcrv9ozw" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__g1bFtVCEe60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__g1bFtVCEe60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="__g1bF9VCEe60Trxcrv9ozw" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="__g1bD9VCEe60Trxcrv9ozw" containment="true"/>
         </eClassifiers>
       </contents>
@@ -3061,7 +3061,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_1l4DRNVBEe60Trxcrv9ozw" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1l4DRdVBEe60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1l4DRdVBEe60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_1l4DRtVBEe60Trxcrv9ozw" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_1l4DPtVBEe60Trxcrv9ozw" containment="true"/>
         </eClassifiers>
       </contents>
@@ -3111,7 +3111,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_WRz1TtU_Ee60Trxcrv9ozw" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WRz1T9U_Ee60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WRz1T9U_Ee60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_WRz1UNU_Ee60Trxcrv9ozw" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_WRz1SNU_Ee60Trxcrv9ozw" containment="true"/>
         </eClassifiers>
       </contents>
@@ -3162,7 +3162,7 @@
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_7jq-wNU-Ee60Trxcrv9ozw" name="QuantityCostList">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7jq-wdU-Ee60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BMmLcNU-Ee60Trxcrv9ozw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7jq-wdU-Ee60Trxcrv9ozw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7jq-wtU-Ee60Trxcrv9ozw" name="CostList" ordered="false" lowerBound="1" upperBound="-1" eType="_7jq-utU-Ee60Trxcrv9ozw" containment="true"/>
         </eClassifiers>
       </contents>
@@ -3209,11 +3209,10 @@
       </contents>
     </eAnnotations>
     <ownedComment xmi:type="uml:Comment" xmi:id="_zs_TENU6Ee60Trxcrv9ozw" annotatedElement="_aV0PcNU6Ee60Trxcrv9ozw">
-      <body>Its goal is to act as a marker for the programmatic traversal that after this comes some choices</body>
+      <body>The variability point acts as a marker in a variability tree and signals that after this a choice must be made</body>
     </ownedComment>
     <ownedComment xmi:type="uml:Comment" xmi:id="__uQ3INU7Ee60Trxcrv9ozw" annotatedElement="_xeYGcNU6Ee60Trxcrv9ozw">
-      <body>Marks that the block that this stereotype is marked to is 1) mutualy exclusive with all other blocks on the same level and stereotype 2) that it is a choice &#xD;
-</body>
+      <body>This is the choice stereotype and holds the general characteristics of the choice, must be attached to a variability point through a generalisation edge pointing at the variability point</body>
     </ownedComment>
     <ownedComment xmi:type="uml:Comment" xmi:id="_a7MAoNebEe6uOeRnJtFzTQ" annotatedElement="_UHQ1wNebEe6uOeRnJtFzTQ">
       <body>Is used to identify the root model package of the variability model</body>
@@ -3227,7 +3226,10 @@ Start element -> End element</body>
 Start element -> End element</body>
     </ownedComment>
     <ownedComment xmi:type="uml:Comment" xmi:id="_bklMYOHiEe6MCsIRtJTtOA" annotatedElement="_ajkQwOHhEe6MCsIRtJTtOA">
-      <body>Used on classes to set goals that either variabilitypoints or  their parents should achive</body>
+      <body>Used to set goals on variability points or entire systems, will look at the choices of its targets to determin if it is satisfied or not. &#xD;
+If the goal has multiple targets only one target needs to be satisfied for the goal to be satisfied. &#xD;
+If the target is on a variability point the sum of the porperty GoalType in the choices need to satisfy the goal. &#xD;
+If the target is a system all contained variability point must satisfy the goal.</body>
     </ownedComment>
     <elementImport xmi:type="uml:ElementImport" xmi:id="_lktJwNU6Ee60Trxcrv9ozw" alias="Class">
       <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
@@ -3341,11 +3343,6 @@ Start element -> End element</body>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_uHAaoNU9Ee60Trxcrv9ozw" name="CostPerPart">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:DataType" xmi:id="_BMmLcNU-Ee60Trxcrv9ozw" name="QuantityCostList">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_E3IjgNU-Ee60Trxcrv9ozw" name="CostList" type="_pnap4NU9Ee60Trxcrv9ozw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JK77ANU-Ee60Trxcrv9ozw" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_UwkaANVBEe60Trxcrv9ozw" name="Domains">
