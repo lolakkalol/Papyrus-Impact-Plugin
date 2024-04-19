@@ -59,7 +59,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#Installation and building">Built With</a></li>
+        <li><a href="#Installation-and-building">Built With</a></li>
       </ul>
     </li>
     <li>
