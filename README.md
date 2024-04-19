@@ -230,6 +230,7 @@ To allow for a consistency in the model, enough for the impact tool to be able t
 These are the general construction rules required to follow while constructing the variability model.
 
 <details>
+
 1. A variability point is a SysML block with the stereotype `VariabilityPoint`.
 
 2. A choice is a SysML block with the stereotype `Choice`.
@@ -245,11 +246,14 @@ These are the general construction rules required to follow while constructing t
 7. Choices are associated to a variability point through a `Generalization` relationship from the choice to the variability point, see Figure 13b.
 
 ![image](https://github.com/lolakkalol/Papyrus-Impact-Plugin/assets/23548892/2207824e-31e4-45a1-86cb-b9d68521e9dc)
+
 </details>
 
 #### Goals and requirements rules
 These are the rules needed to be followed while adding requirements and goals to the variability model.
+
 <details>
+  
 1. A requirement is a SysML pre-defined `Requirement` modelling element.
 
 2. A goal is a SysML block with the stereotype `Goal`.
@@ -302,6 +306,66 @@ These are the parameter rules that modelling elements with the `Choice` stereoty
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Modelling Process
+This section will introduce a general process for using the created meta-model to create a model of a general product which can be used together with the impact tooling. An overview of the proposed process can be seen in Figure 20. What is to follow is an example of how the proposed process is applied to the fictitious RGC.
+
+![image](https://github.com/lolakkalol/Papyrus-Impact-Plugin/assets/23548892/80add0f8-72b6-45ac-a934-f1dcc2e91047)
+
+As this approach tries to be as general as possible it will begin with understanding the structure of the product and how modelling can be applied using the following process. To gain an understanding of the product, modelling, and the general process, inspiration from Cederbladh and Suryadevara [1] was taken, and it was decided to initially start the process of understanding the product by performing a bottom-up composition division. This bottom-up approach consists of starting to look at what different components the system is composed of. Using the RGC example, one would start to look at the physical components of an already implemented RGC and determine what components are of value in the decision-making process. This can, for example, be impactful components. To note here is that there is a difference in the decision-making value of choosing between different CPUs and different resistors, where the choice of CPU could be perceived as more valuable and impactful, especially at early stages, while deciding between different resistors can wait until much more later. It is hence possible to start filtering out components which are found to be less important. The knowledge of what components are important can then be used to build a variability tree. These impactful components can then be grouped by functionality or logically by the present architecture, and this set of grouped components can then be grouped to form the next level of the variability tree and so on. This continues until the top of the product is reached, i.e. the requirements. This type of high-level System decomposition of the product, for the RGC, can be seen in Figure 21.
+
+![image](https://github.com/lolakkalol/Papyrus-Impact-Plugin/assets/23548892/32d3d51d-eef5-479c-b8e3-f38c0d0ba051)
+
+This system decomposition can then be used to initially reason about the system and see what different possible choices one might have to make and partially what impact they will have. This can also be used to determine at what level a new product would be developed. This is possible as there might already exist a sub-system usable for the design, for example, in \gls{rgc}, a general compute architecture allowing us to use it instead. It is also possible to design a new architecture instead, and if so, the important components for the sub-system need to be determined, either through the bottom-up or something else. Performing a bottom-up product decomposition from a component level might not be possible from component level for all types of products, and discretion must be taken to perform it at a reasonable level.
+
+Now that the general system composition is known and how it can be represented using a \gls{bdd} diagram, one can start looking at designing new products from this understanding of the product structure. The rest of the process is highly iterative, and moving to previous steps in the process is expected.
+
+It is now possible to create a new product knowing what choices might be found useful. It then begins with modelling the requirements of the product on a high level in a requirements diagram, some example requirements for the \gls{rgc} are shown in figure  \ref{fig:rgc-reqs}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/RGC-requirements.png}
+    \caption[Five fictitious requirements placed on the {\glsxtrfull[hyper=false, local=true]{rgc}}.]{Five fictitious requirements placed on the \gls{rgc}.}
+    \label{fig:rgc-reqs}
+\end{figure}
+
+Once the requirements have been collected and added to a requirements diagram under the requirements folder per \sref{sec:goals_and_requirements_rules} rule 3, the \texttt{System Context} can be modelled. The \texttt{System Context} consists of any contextual significant systems that may affect the selection of choices. This can be the environment, standards, organisations, and more which could affect the decisions. Continuing the \gls{rgc} one of the requirements sets a need to follow applicable standards and conform to two different regions. This could then be added to the system's context by modelling a \texttt{Standards} and \texttt{Location} block and end up with Figure \ref{fig:RGCSystemContext}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/SystemContextRGC.png}
+    \caption[{\glsxtrfull[hyper=false, local=true]{rgc}} \texttt{System Context} \glsxtrfull{bdd}]{The figure shows the \texttt{System Context} \gls{bdd}, defining the context of the system to capture any impact that the choice of context may have on the system.}
+    \label{fig:RGCSystemContext}
+\end{figure}
+
+In Figure \ref{fig:RGCSystemContext}, \texttt{Standards} and \texttt{Location} are already set as variability points as they are not expected to be decomposed further. Then, the systems in \texttt{System Context} are further decomposed, and goals, constraints, and choices are added. This can be done by creating a new \gls{bdd} for each system that there is a need to specify or decompose further. In Figure \ref{fig:LocationBDD}, \texttt{Location} is further specified that there are three different locations of interest specified through creating a choice and drawing a \texttt{Generalization} relationship to the variability point \texttt{Location}. In the figure constraints are also placed to force the inclusion of specific standards and certifications which are required depending on the location. This can then also be done for the \gls{rgc} system. Already at this stage the created model can be checked for any constraint violations using the impact tool if the need exists.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/RGCLocationBDD.png}
+    \caption[The figure shows the {\glsxtrfull[local=true, hyper=false]{bdd}} of the variability point \texttt{Location} and the constraints placed on the choice of location.]{The figure shows the \gls{bdd} of the variability point \texttt{Location} and the constraints placed on the choice of location.}
+    \label{fig:LocationBDD}
+\end{figure}
+
+The \gls{rgc} in \texttt{System Context} can then be further decomposed into the blocks discovered during the bottom-up approach, it is also possible to start assigning requirements to the \gls{rgc} through a goal and use that to verify the requirements satisfaction, see \ref{fig:RGC}. In Figure \ref{fig:RGC} it can then be seen that the goal \texttt{Total Cost Goal} sets a limit on the cost of the \gls{rgc} to be less than 100 dollars which is then used to verify the requirement \texttt{Sys-req1}. The goal \texttt{Total Cost Goal} will then check that the sum of all choices further down the variability tree does not exceed the requirement set limit. The same could be said about \texttt{Total Power Goal}, which checks that the power requirement \texttt{Sys-req4} is satisfied. To further decompose the \texttt{General Compute Arch}, it is now possible to either create a new \gls{bdd} diagram to decompose it or continue in the present diagram Figure \ref{fig:RGC}. This decision will be up to the modeller of the system but can always be adjusted after the fact to create cleaner views of the model. This will also depend on wether there is a need to decompose any further, due to already existing solutions at this level exist. However as no solution at this level of abstraction exists, it is further decomposed in Figure \ref{fig:GCA}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/RGC.png}
+    \caption[Decomposition, and goals, of the {\glsxtrfull[hyper=false, local=true]{rgc}}]{The decomposition of the \gls{rgc} together with two goals which limits the total cost and power, which also verifies two of the requirements. This model is not complete as the \gls{rgc} would most likely contain more systems than depicted but is simplified for ease of presentation.}
+    \label{fig:RGC}
+\end{figure}
+
+As it is expected that the \texttt{General Compute Arch} will be quite large, its own \gls{bdd} is created to describe its variability points, goals, requirements, sub-systems and constraints. As can be seen in Figure \ref{fig:GCA}, the \texttt{General Computer Arch} is composed of three different variability points, each with some possible choices where each choice has meta-data about their performance, power, cost\footnote{The cost is not shown in the model due to a limitation; the cost would be presented in an overly verbose way bloating the model.}, per the meta-model. The choices selected to be included in the model is another decision which needs to be made by the engineers designing the system. Choices can however be added at a later date if the choices in the model are not able to satisfy all constraints and requirements. In Figure \ref{fig:GCA}, it is possible to start to see constraints between the choices, which limit what selections are allowed based on other selections. Choices from other variability points in other diagrams are also included in this view to show how the choices in this diagram is affected by other choices. This can be seen in the choice \texttt{6502 STD Lib} which is a choice under a variability point named \texttt{STD Library} which is a software variability point under the \gls{rgc} sub-system \texttt{Game Cartridge}. This then shows how the different choices affect selection of other components. The selection of \texttt{6502} choice then enables the selection of \texttt{6502 STD Lib}\footnote{In papyrus you can easily navigate between these different views were the \texttt{STD Library} variability point is located as the relationships creates a link between the blocks which papyrus can navigate.}. It is here possible to see how fast this can get complicated as the \texttt{STD Library}'s choices may have additional constraints which are not visible in the current view. If this is done for each system of \gls{rgc}, it would be possible to see how one choice affects another. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/GCA.png}
+    \caption{The decomposition of \texttt{General Compute Arch} together with goals and constraints.}
+    \label{fig:GCA}
+\end{figure}
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTACT -->
 ## Contact
 
@@ -316,6 +380,8 @@ Project Link: [https://github.com/lolakkalol/Papyrus-Impact-Plugin](https://gith
 
 How to add a UML2 profile to a plugin as a static profile:
 [http://nyssen.blogspot.com/2009/09/defining-static-profiles-with-eclipse.html](http://nyssen.blogspot.com/2009/09/defining-static-profiles-with-eclipse.html)
+
+[1] J. Cederbladh and J. Suryadevara, ‘Light-weight mbse approach for construction equipment domain - an experience report,’ in 30th Asia-Pacific Software Engineering Conference, Accessed: Jan. 30, 2024, Dec. 2023. [Online]. Available: http://www.es.mdu.se/publications/6852-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
