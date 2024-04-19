@@ -65,14 +65,25 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites">Modify the Meta-Model</a></li>
+        <li><a href="#installation">Modify the Impact API</a></li>
+        <li><a href="#installation">Modify the Impact View/Tool</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#usage">Meta-Model</a>
+      <ul>
+        <li><a href="#prerequisites">Variability Point</a></li>
+        <li><a href="#installation">Choice</a></li>
+        <li><a href="#installation">Goal</a></li>
+        <li><a href="#installation">Constraints</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a>
+      <ul>
+        <li><a href="#prerequisites">Modelling rules</a></li>
+        <li><a href="#installation">Modelling process</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
