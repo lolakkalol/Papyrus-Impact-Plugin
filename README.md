@@ -59,29 +59,29 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#Installation-and-building">Built With</a></li>
+        <li><a href="#Installation-and-building">Installation and Building</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Modify the Meta-Model</a></li>
-        <li><a href="#installation">Modify the Impact API</a></li>
-        <li><a href="#installation">Modify the Impact View/Tool</a></li>
+        <li><a href="#Modify-the-meta-model/profile">Modify the Meta-Model</a></li>
+        <li><a href="#Modify-the-impact-API">Modify the Impact API</a></li>
+        <li><a href="#Modify-the-impact-view">Modify the Impact View/Tool</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Meta-Model</a>
+    <li><a href="#Meta-Model">Meta-Model</a>
       <ul>
-        <li><a href="#prerequisites">Variability Point</a></li>
-        <li><a href="#installation">Choice</a></li>
-        <li><a href="#installation">Goal</a></li>
-        <li><a href="#installation">Constraints</a></li>
+        <li><a href="#Variability-point">Variability Point</a></li>
+        <li><a href="#Choice">Choice</a></li>
+        <li><a href="#Goal">Goal</a></li>
+        <li><a href="#Constraints">Constraints</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a>
+    <li><a href="#Method-and-Process">Method and Process</a>
       <ul>
-        <li><a href="#prerequisites">Modelling rules</a></li>
-        <li><a href="#installation">Modelling process</a></li>
+        <li><a href="#Modellig-rules">Modelling rules</a></li>
+        <li><a href="#Modelling-Process">Modelling process</a></li>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
