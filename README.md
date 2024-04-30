@@ -39,7 +39,7 @@
   <p align="center">
     A meta-model and tool for impact analysis of SysML models!
     <br />
-    <a href="https://github.com/lolakkalol/Papyrus-Impact-Plugin"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/lolakkalol/Papyrus-Impact-Plugin/tree/main#getting-started"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/lolakkalol/Papyrus-Impact-Plugin/tree/main/examples">View Example Projects</a>
