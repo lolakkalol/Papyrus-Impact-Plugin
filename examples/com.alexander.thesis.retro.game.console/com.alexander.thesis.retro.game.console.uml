@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ImpactProfile="http://com.alexander.thesis.profile/0.1.0/ImpactProfile.xmi" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_gIGOMOXwEe6qnNc0WpFgLA" name="com">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_gKT0sOXwEe6qnNc0WpFgLA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_gKbwgOXwEe6qnNc0WpFgLA">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_uN98sOXwEe6qnNc0WpFgLA" name="Variability-RGC">
+      <packagedElement xmi:type="uml:Class" xmi:id="_7ri8IOXwEe6qnNc0WpFgLA" name="System Context">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_nMxbweX5Ee6qnNc0WpFgLA" name="retro game console" type="_kZ0L8OX5Ee6qnNc0WpFgLA" aggregation="composite" association="_nMvmkOX5Ee6qnNc0WpFgLA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nMyC0OX5Ee6qnNc0WpFgLA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nMyC0eX5Ee6qnNc0WpFgLA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ntBCEuX5Ee6qnNc0WpFgLA" name="location" type="_EEBC8OXxEe6qnNc0WpFgLA" aggregation="composite" association="_ntAbAOX5Ee6qnNc0WpFgLA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ntBCE-X5Ee6qnNc0WpFgLA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ntBpIOX5Ee6qnNc0WpFgLA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_vvGCIuX5Ee6qnNc0WpFgLA" name="standards" type="_tjNZYOX5Ee6qnNc0WpFgLA" aggregation="composite" association="_vvFbEOX5Ee6qnNc0WpFgLA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vvGCI-X5Ee6qnNc0WpFgLA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vvGpMOX5Ee6qnNc0WpFgLA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_EEBC8OXxEe6qnNc0WpFgLA" name="Location">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_zE_DEOX9Ee6qnNc0WpFgLA" name="U.S.A">
+          <generalization xmi:type="uml:Generalization" xmi:id="_9jTcEOX9Ee6qnNc0WpFgLA" general="_EEBC8OXxEe6qnNc0WpFgLA"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_1SHB8OX9Ee6qnNc0WpFgLA" name="Europe">
+          <generalization xmi:type="uml:Generalization" xmi:id="_9LQIcOX9Ee6qnNc0WpFgLA" general="_EEBC8OXxEe6qnNc0WpFgLA"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_2dKf0OX9Ee6qnNc0WpFgLA" name="Asia">
+          <generalization xmi:type="uml:Generalization" xmi:id="_81_qIOX9Ee6qnNc0WpFgLA" general="_EEBC8OXxEe6qnNc0WpFgLA"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kZ0L8OX5Ee6qnNc0WpFgLA" name="Retro Game Console">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1ulDk-dSEe6qnNc0WpFgLA" name="general compute arch" type="_vAez4OdSEe6qnNc0WpFgLA" aggregation="composite" association="_1ulDkOdSEe6qnNc0WpFgLA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ulDlOdSEe6qnNc0WpFgLA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1ulDledSEe6qnNc0WpFgLA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_2KMokudSEe6qnNc0WpFgLA" name="game cartridge" type="_y1R7MOdSEe6qnNc0WpFgLA" aggregation="composite" association="_2KMBgOdSEe6qnNc0WpFgLA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2KMok-dSEe6qnNc0WpFgLA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2KNPoOdSEe6qnNc0WpFgLA" value="1"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_kcmrIOYCEe6qnNc0WpFgLA" name="Total Cost Goal">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3LfMIeYCEe6qnNc0WpFgLA" name="retro game console" type="_kZ0L8OX5Ee6qnNc0WpFgLA" association="_3LelEOYCEe6qnNc0WpFgLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3LfzMOYCEe6qnNc0WpFgLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3LfzMeYCEe6qnNc0WpFgLA" value="1"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_vAez4OdSEe6qnNc0WpFgLA" name="General Compute Arch">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_7_a6sAa7Ee-Dv79DJ5pjHA" annotatedElement="_e305cAa7Ee-Dv79DJ5pjHA">
+            <body>Is continued in its own diagram</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aUpok-dTEe6qnNc0WpFgLA" name="cpu" type="_Hrq7QOdTEe6qnNc0WpFgLA" aggregation="composite" association="_aUpokOdTEe6qnNc0WpFgLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aUqPoOdTEe6qnNc0WpFgLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aUqPoedTEe6qnNc0WpFgLA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_a1z04-dTEe6qnNc0WpFgLA" name="ram" type="_KPzE4OdTEe6qnNc0WpFgLA" aggregation="composite" association="_a1z04OdTEe6qnNc0WpFgLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a1z05OdTEe6qnNc0WpFgLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a1z05edTEe6qnNc0WpFgLA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bXvdQudTEe6qnNc0WpFgLA" name="expansion port" type="_LGQy0OdTEe6qnNc0WpFgLA" aggregation="composite" association="_bXrL0OdTEe6qnNc0WpFgLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bXvdQ-dTEe6qnNc0WpFgLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bXvdROdTEe6qnNc0WpFgLA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pQTJIAa7Ee-Dv79DJ5pjHA" name="gca features" type="_e305cAa7Ee-Dv79DJ5pjHA" aggregation="composite" association="_pQGU0Aa7Ee-Dv79DJ5pjHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pQTwMAa7Ee-Dv79DJ5pjHA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pQTwMQa7Ee-Dv79DJ5pjHA" value="1"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Hrq7QOdTEe6qnNc0WpFgLA" name="CPU"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_KPzE4OdTEe6qnNc0WpFgLA" name="RAM"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_LGQy0OdTEe6qnNc0WpFgLA" name="Expansion Port"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_nZjCQOdTEe6qnNc0WpFgLA" name="6502">
+            <generalization xmi:type="uml:Generalization" xmi:id="_BgBb4OdUEe6qnNc0WpFgLA" general="_Hrq7QOdTEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_uIBFYOdTEe6qnNc0WpFgLA" name="Z80">
+            <generalization xmi:type="uml:Generalization" xmi:id="_CRFscOdUEe6qnNc0WpFgLA" general="_Hrq7QOdTEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_u9O2IOdTEe6qnNc0WpFgLA" name="6802">
+            <generalization xmi:type="uml:Generalization" xmi:id="_DBf1sOdUEe6qnNc0WpFgLA" general="_Hrq7QOdTEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Uc6jsOdUEe6qnNc0WpFgLA" name="WRAM">
+            <generalization xmi:type="uml:Generalization" xmi:id="_ekyLkOdUEe6qnNc0WpFgLA" general="_KPzE4OdTEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_VXU9gOdUEe6qnNc0WpFgLA" name="SRAM">
+            <generalization xmi:type="uml:Generalization" xmi:id="_gYI_kOdUEe6qnNc0WpFgLA" general="_KPzE4OdTEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_JLSMgOdWEe6qnNc0WpFgLA" name="GCA-Cost-Budget">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_XK9zc-dWEe6qnNc0WpFgLA" name="general compute arch" type="_vAez4OdSEe6qnNc0WpFgLA" association="_XK9zcOdWEe6qnNc0WpFgLA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XK9zdOdWEe6qnNc0WpFgLA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XK9zdedWEe6qnNc0WpFgLA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_e305cAa7Ee-Dv79DJ5pjHA" name="GCA features">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_51eHcAbCEe-Dv79DJ5pjHA" name="gca feature 1" type="_uJ204AbCEe-Dv79DJ5pjHA" aggregation="composite" association="_51U9gAbCEe-Dv79DJ5pjHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_51eHcQbCEe-Dv79DJ5pjHA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_51eHcgbCEe-Dv79DJ5pjHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_7CU8IgbCEe-Dv79DJ5pjHA" name="gca feature 2" type="_t66Z8AbCEe-Dv79DJ5pjHA" aggregation="composite" association="_7CUVEAbCEe-Dv79DJ5pjHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7CVjMAbCEe-Dv79DJ5pjHA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7CVjMQbCEe-Dv79DJ5pjHA" value="1"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_t66Z8AbCEe-Dv79DJ5pjHA" name="GCA feature 2"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_uJ204AbCEe-Dv79DJ5pjHA" name="GCA feature 1"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_y1R7MOdSEe6qnNc0WpFgLA" name="Game Cartridge">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4BrVU-dXEe6qnNc0WpFgLA" name="hardware abstraction layer" type="_vMWTYOdXEe6qnNc0WpFgLA" aggregation="composite" association="_4BrVUOdXEe6qnNc0WpFgLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4BrVVOdXEe6qnNc0WpFgLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4BrVVedXEe6qnNc0WpFgLA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4cfCA-dXEe6qnNc0WpFgLA" name="std library" type="_ygm5cOdXEe6qnNc0WpFgLA" aggregation="composite" association="_4cfCAOdXEe6qnNc0WpFgLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4cfCBOdXEe6qnNc0WpFgLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4cfCBedXEe6qnNc0WpFgLA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OoNdU-dYEe6qnNc0WpFgLA" name="program rom" type="_AzSU4OdYEe6qnNc0WpFgLA" aggregation="composite" association="_OoNdUOdYEe6qnNc0WpFgLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OoNdVOdYEe6qnNc0WpFgLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OoNdVedYEe6qnNc0WpFgLA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PEslA-dYEe6qnNc0WpFgLA" name="character ram" type="_BogFoOdYEe6qnNc0WpFgLA" aggregation="composite" association="_PEslAOdYEe6qnNc0WpFgLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PEslBOdYEe6qnNc0WpFgLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PEtMEOdYEe6qnNc0WpFgLA" value="1"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_vMWTYOdXEe6qnNc0WpFgLA" name="Hardware Abstraction Layer (HAL)"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ygm5cOdXEe6qnNc0WpFgLA" name="STD Library"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_AzSU4OdYEe6qnNc0WpFgLA" name="Program ROM"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_BogFoOdYEe6qnNc0WpFgLA" name="Character RAM"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TV0b8OdYEe6qnNc0WpFgLA" name="6802 HAL">
+            <generalization xmi:type="uml:Generalization" xmi:id="_C75KsOdZEe6qnNc0WpFgLA" general="_vMWTYOdXEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_pa6q0OdYEe6qnNc0WpFgLA" name="New HAL">
+            <generalization xmi:type="uml:Generalization" xmi:id="_DZGEEOdZEe6qnNc0WpFgLA" general="_vMWTYOdXEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_tUBDUOdYEe6qnNc0WpFgLA" name="6502 STD Lib">
+            <generalization xmi:type="uml:Generalization" xmi:id="_9stJAOdYEe6qnNc0WpFgLA" general="_ygm5cOdXEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_uqPPYOdYEe6qnNc0WpFgLA" name="Z80 STD Lib">
+            <generalization xmi:type="uml:Generalization" xmi:id="_9MnTsOdYEe6qnNc0WpFgLA" general="_ygm5cOdXEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_wmrG4OdYEe6qnNc0WpFgLA" name="New Lib">
+            <generalization xmi:type="uml:Generalization" xmi:id="_74VoYOdYEe6qnNc0WpFgLA" general="_ygm5cOdXEe6qnNc0WpFgLA"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_QzprEOdhEe6qnNc0WpFgLA" name="Total Power Goal">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bQigs-dhEe6qnNc0WpFgLA" name="retro game console" type="_kZ0L8OX5Ee6qnNc0WpFgLA" association="_bQigsOdhEe6qnNc0WpFgLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bQigtOdhEe6qnNc0WpFgLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bQigtedhEe6qnNc0WpFgLA" value="1"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_nMvmkOX5Ee6qnNc0WpFgLA" memberEnd="_nMxbweX5Ee6qnNc0WpFgLA _nMyC0uX5Ee6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nMw0sOX5Ee6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nMxbwOX5Ee6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_nMyC0uX5Ee6qnNc0WpFgLA" name="system context" type="_7ri8IOXwEe6qnNc0WpFgLA" association="_nMvmkOX5Ee6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ntAbAOX5Ee6qnNc0WpFgLA" memberEnd="_ntBCEuX5Ee6qnNc0WpFgLA _ntBpIeX5Ee6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ntBCEOX5Ee6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ntBCEeX5Ee6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ntBpIeX5Ee6qnNc0WpFgLA" name="system context" type="_7ri8IOXwEe6qnNc0WpFgLA" association="_ntAbAOX5Ee6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tjNZYOX5Ee6qnNc0WpFgLA" name="Standards">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_OSkEIOX9Ee6qnNc0WpFgLA" name="Federal Communications Commission (FCC)">
+          <generalization xmi:type="uml:Generalization" xmi:id="_phesgOX9Ee6qnNc0WpFgLA" general="_tjNZYOX5Ee6qnNc0WpFgLA"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_hCDCEOX9Ee6qnNc0WpFgLA" name="CE (Conformité Européenne)">
+          <generalization xmi:type="uml:Generalization" xmi:id="_pELsgOX9Ee6qnNc0WpFgLA" general="_tjNZYOX5Ee6qnNc0WpFgLA"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_vvFbEOX5Ee6qnNc0WpFgLA" memberEnd="_vvGCIuX5Ee6qnNc0WpFgLA _vvGpMeX5Ee6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vvGCIOX5Ee6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vvGCIeX5Ee6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_vvGpMeX5Ee6qnNc0WpFgLA" name="system context" type="_7ri8IOXwEe6qnNc0WpFgLA" association="_vvFbEOX5Ee6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_EjEDgOX-Ee6qnNc0WpFgLA" client="_1SHB8OX9Ee6qnNc0WpFgLA" supplier="_hCDCEOX9Ee6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_FJPSsOX-Ee6qnNc0WpFgLA" client="_zE_DEOX9Ee6qnNc0WpFgLA" supplier="_OSkEIOX9Ee6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_3LelEOYCEe6qnNc0WpFgLA" memberEnd="_3LfMIeYCEe6qnNc0WpFgLA _3LfzMuYCEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3LelEeYCEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3LfMIOYCEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_3LfzMuYCEe6qnNc0WpFgLA" name="total cost goal" type="_kcmrIOYCEe6qnNc0WpFgLA" association="_3LelEOYCEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_1ulDkOdSEe6qnNc0WpFgLA" memberEnd="_1ulDk-dSEe6qnNc0WpFgLA _1ulDludSEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1ulDkedSEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1ulDkudSEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_1ulDludSEe6qnNc0WpFgLA" name="retro game console" type="_kZ0L8OX5Ee6qnNc0WpFgLA" association="_1ulDkOdSEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2KMBgOdSEe6qnNc0WpFgLA" memberEnd="_2KMokudSEe6qnNc0WpFgLA _2KNPoedSEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2KMokOdSEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2KMokedSEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2KNPoedSEe6qnNc0WpFgLA" name="retro game console" type="_kZ0L8OX5Ee6qnNc0WpFgLA" association="_2KMBgOdSEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_aUpokOdTEe6qnNc0WpFgLA" memberEnd="_aUpok-dTEe6qnNc0WpFgLA _aUqPoudTEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aUpokedTEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aUpokudTEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_aUqPoudTEe6qnNc0WpFgLA" name="general compute arch" type="_vAez4OdSEe6qnNc0WpFgLA" association="_aUpokOdTEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_a1z04OdTEe6qnNc0WpFgLA" memberEnd="_a1z04-dTEe6qnNc0WpFgLA _a1z05udTEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a1z04edTEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a1z04udTEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_a1z05udTEe6qnNc0WpFgLA" name="general compute arch" type="_vAez4OdSEe6qnNc0WpFgLA" association="_a1z04OdTEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bXrL0OdTEe6qnNc0WpFgLA" memberEnd="_bXvdQudTEe6qnNc0WpFgLA _bXvdRedTEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bXvdQOdTEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bXvdQedTEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bXvdRedTEe6qnNc0WpFgLA" name="general compute arch" type="_vAez4OdSEe6qnNc0WpFgLA" association="_bXrL0OdTEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_beizYOdUEe6qnNc0WpFgLA" client="_u9O2IOdTEe6qnNc0WpFgLA" supplier="_Uc6jsOdUEe6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XK9zcOdWEe6qnNc0WpFgLA" memberEnd="_XK9zc-dWEe6qnNc0WpFgLA _XK9zdudWEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XK9zcedWEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XK9zcudWEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XK9zdudWEe6qnNc0WpFgLA" name="gca-cost-budget" type="_JLSMgOdWEe6qnNc0WpFgLA" association="_XK9zcOdWEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_q6DNMOdWEe6qnNc0WpFgLA" client="_hCDCEOX9Ee6qnNc0WpFgLA" supplier="_uIBFYOdTEe6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_5nUS4OdWEe6qnNc0WpFgLA" client="_OSkEIOX9Ee6qnNc0WpFgLA" supplier="_nZjCQOdTEe6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4BrVUOdXEe6qnNc0WpFgLA" memberEnd="_4BrVU-dXEe6qnNc0WpFgLA _4BrVVudXEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4BrVUedXEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4BrVUudXEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4BrVVudXEe6qnNc0WpFgLA" name="game cartridge" type="_y1R7MOdSEe6qnNc0WpFgLA" association="_4BrVUOdXEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4cfCAOdXEe6qnNc0WpFgLA" memberEnd="_4cfCA-dXEe6qnNc0WpFgLA _4cfCBudXEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4cfCAedXEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4cfCAudXEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4cfCBudXEe6qnNc0WpFgLA" name="game cartridge" type="_y1R7MOdSEe6qnNc0WpFgLA" association="_4cfCAOdXEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_OoNdUOdYEe6qnNc0WpFgLA" memberEnd="_OoNdU-dYEe6qnNc0WpFgLA _OoOEYOdYEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OoNdUedYEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OoNdUudYEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_OoOEYOdYEe6qnNc0WpFgLA" name="game cartridge" type="_y1R7MOdSEe6qnNc0WpFgLA" association="_OoNdUOdYEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_PEslAOdYEe6qnNc0WpFgLA" memberEnd="_PEslA-dYEe6qnNc0WpFgLA _PEtMEedYEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PEslAedYEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PEslAudYEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_PEtMEedYEe6qnNc0WpFgLA" name="game cartridge" type="_y1R7MOdSEe6qnNc0WpFgLA" association="_PEslAOdYEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_k6EgYOdZEe6qnNc0WpFgLA" client="_uqPPYOdYEe6qnNc0WpFgLA" supplier="_uIBFYOdTEe6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_mKj34OdZEe6qnNc0WpFgLA" client="_tUBDUOdYEe6qnNc0WpFgLA" supplier="_nZjCQOdTEe6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_mpZwAOdZEe6qnNc0WpFgLA" client="_TV0b8OdYEe6qnNc0WpFgLA" supplier="_u9O2IOdTEe6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bQigsOdhEe6qnNc0WpFgLA" memberEnd="_bQigs-dhEe6qnNc0WpFgLA _bQigtudhEe6qnNc0WpFgLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bQigsedhEe6qnNc0WpFgLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bQigsudhEe6qnNc0WpFgLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bQigtudhEe6qnNc0WpFgLA" name="total power goal" type="_QzprEOdhEe6qnNc0WpFgLA" association="_bQigsOdhEe6qnNc0WpFgLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_pQGU0Aa7Ee-Dv79DJ5pjHA" memberEnd="_pQTJIAa7Ee-Dv79DJ5pjHA _pQTwMga7Ee-Dv79DJ5pjHA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pQQF0Aa7Ee-Dv79DJ5pjHA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pQQs4Aa7Ee-Dv79DJ5pjHA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_pQTwMga7Ee-Dv79DJ5pjHA" name="general compute arch" type="_vAez4OdSEe6qnNc0WpFgLA" association="_pQGU0Aa7Ee-Dv79DJ5pjHA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_51U9gAbCEe-Dv79DJ5pjHA" memberEnd="_51eHcAbCEe-Dv79DJ5pjHA _51eHcwbCEe-Dv79DJ5pjHA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51dgYAbCEe-Dv79DJ5pjHA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_51dgYQbCEe-Dv79DJ5pjHA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_51eHcwbCEe-Dv79DJ5pjHA" name="gca features" type="_e305cAa7Ee-Dv79DJ5pjHA" association="_51U9gAbCEe-Dv79DJ5pjHA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_7CUVEAbCEe-Dv79DJ5pjHA" memberEnd="_7CU8IgbCEe-Dv79DJ5pjHA _7CVjMgbCEe-Dv79DJ5pjHA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7CU8IAbCEe-Dv79DJ5pjHA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7CU8IQbCEe-Dv79DJ5pjHA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_7CVjMgbCEe-Dv79DJ5pjHA" name="gca features" type="_e305cAa7Ee-Dv79DJ5pjHA" association="_7CUVEAbCEe-Dv79DJ5pjHA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_iKVOMAbKEe-Dv79DJ5pjHA" client="_nZjCQOdTEe6qnNc0WpFgLA" supplier="_uJ204AbCEe-Dv79DJ5pjHA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_isguMAbKEe-Dv79DJ5pjHA" client="_uJ204AbCEe-Dv79DJ5pjHA" supplier="_nZjCQOdTEe6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_sd0QMAbKEe-Dv79DJ5pjHA" client="_uIBFYOdTEe6qnNc0WpFgLA" supplier="_t66Z8AbCEe-Dv79DJ5pjHA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_tD-RQAbKEe-Dv79DJ5pjHA" client="_t66Z8AbCEe-Dv79DJ5pjHA" supplier="_uIBFYOdTEe6qnNc0WpFgLA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_IL6scOXxEe6qnNc0WpFgLA" name="Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_xxpz8OXyEe6qnNc0WpFgLA" name="Sys-req1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-KJaoOXyEe6qnNc0WpFgLA" name="Sys-req2"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PVLjQOXzEe6qnNc0WpFgLA" name="Sys-req3"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XyYZEOXzEe6qnNc0WpFgLA" name="Sys-req4"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_oWSQQOXzEe6qnNc0WpFgLA" name="Sys-req5"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_HeL-kOYDEe6qnNc0WpFgLA" name="Verify6" client="_xxpz8OXyEe6qnNc0WpFgLA" supplier="_kcmrIOYCEe6qnNc0WpFgLA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_m3KlkOdhEe6qnNc0WpFgLA" name="Verify7" client="_XyYZEOXzEe6qnNc0WpFgLA" supplier="_QzprEOdhEe6qnNc0WpFgLA"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gI_mEOXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gJANIOXwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gKRYcOXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gKRYceXwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gKRYcuXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gKRYc-XwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gKR_gOXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gKR_geXwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gKR_guXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gKR_g-XwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gKR_hOXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gKR_heXwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gKR_huXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gKR_h-XwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gKSmkOXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gKSmkeXwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gKSmkuXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gKSmk-XwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gKTNoOXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gKTNoeXwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_l26yMOXwEe6qnNc0WpFgLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l26yMeXwEe6qnNc0WpFgLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://com.alexander.thesis.profile/0.1.0/ImpactProfile.xmi#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="platform:/plugin/com.alexander.thesis/model/com.alexander.thesis.profile.uml#_QpU8ANU6Ee60Trxcrv9ozw"/>
+    </profileApplication>
+  </uml:Model>
+  <ImpactProfile:VariabilityModel xmi:id="_yCNDUOXwEe6qnNc0WpFgLA" base_Model="_uN98sOXwEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_7rpCwOXwEe6qnNc0WpFgLA" base_Class="_7ri8IOXwEe6qnNc0WpFgLA"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_SHQlIOX6Ee6qnNc0WpFgLA" base_Class="_EEBC8OXxEe6qnNc0WpFgLA" MutualExclusion="false"/>
+  <Requirements:Requirement xmi:id="_xxv6kOXyEe6qnNc0WpFgLA" base_NamedElement="_xxpz8OXyEe6qnNc0WpFgLA" id="Sys-req1" text="The retro game console shall cost less than 100 dollars" base_Class="_xxpz8OXyEe6qnNc0WpFgLA"/>
+  <Requirements:Requirement xmi:id="_-KL24OXyEe6qnNc0WpFgLA" base_NamedElement="_-KJaoOXyEe6qnNc0WpFgLA" id="Sys-req2" text="The retro game console shall be able to show 2D graphics on a 640x480 screen" base_Class="_-KJaoOXyEe6qnNc0WpFgLA"/>
+  <Requirements:Requirement xmi:id="_PVN_gOXzEe6qnNc0WpFgLA" base_NamedElement="_PVLjQOXzEe6qnNc0WpFgLA" id="Sys-req3" text="The retro game console system shall be able to connect to display using VGA" base_Class="_PVLjQOXzEe6qnNc0WpFgLA"/>
+  <Requirements:Requirement xmi:id="_XyaOQOXzEe6qnNc0WpFgLA" base_NamedElement="_XyYZEOXzEe6qnNc0WpFgLA" id="Sys-req4" text="The retro game console shall draw less power than 10 Watts" base_Class="_XyYZEOXzEe6qnNc0WpFgLA"/>
+  <Requirements:Requirement xmi:id="_oWUFcOXzEe6qnNc0WpFgLA" base_NamedElement="_oWSQQOXzEe6qnNc0WpFgLA" id="Sys-req6" text="The retro game console shall follow applicable standards for Europe AND U.S.A." base_Class="_oWSQQOXzEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_kZ0L8eX5Ee6qnNc0WpFgLA" base_Class="_kZ0L8OX5Ee6qnNc0WpFgLA"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_Q-uPwOX6Ee6qnNc0WpFgLA" base_Class="_tjNZYOX5Ee6qnNc0WpFgLA" MutualExclusion="false"/>
+  <Blocks:Block xmi:id="_tjNZYeX5Ee6qnNc0WpFgLA" base_Class="_tjNZYOX5Ee6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_EEEtUOXxEe6qnNc0WpFgLA" base_Class="_EEBC8OXxEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Choice xmi:id="_Rbp8AOX9Ee6qnNc0WpFgLA" base_Class="_OSkEIOX9Ee6qnNc0WpFgLA" Selected="true"/>
+  <Blocks:Block xmi:id="_OSl5UOX9Ee6qnNc0WpFgLA" base_Class="_OSkEIOX9Ee6qnNc0WpFgLA"/>
+  <ImpactProfile:Choice xmi:id="_mf38sOX9Ee6qnNc0WpFgLA" base_Class="_hCDCEOX9Ee6qnNc0WpFgLA" Selected="true"/>
+  <Blocks:Block xmi:id="_hCFeUOX9Ee6qnNc0WpFgLA" base_Class="_hCDCEOX9Ee6qnNc0WpFgLA"/>
+  <ImpactProfile:Choice xmi:id="_5KUCkOX9Ee6qnNc0WpFgLA" base_Class="_zE_DEOX9Ee6qnNc0WpFgLA" Selected="true"/>
+  <ImpactProfile:Choice xmi:id="_5605gOX9Ee6qnNc0WpFgLA" base_Class="_1SHB8OX9Ee6qnNc0WpFgLA" Selected="true"/>
+  <ImpactProfile:Choice xmi:id="_6cDXQOX9Ee6qnNc0WpFgLA" base_Class="_2dKf0OX9Ee6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_zE_DEeX9Ee6qnNc0WpFgLA" base_Class="_zE_DEOX9Ee6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_1SI3IOX9Ee6qnNc0WpFgLA" base_Class="_1SHB8OX9Ee6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_2dMVAOX9Ee6qnNc0WpFgLA" base_Class="_2dKf0OX9Ee6qnNc0WpFgLA"/>
+  <ImpactProfile:Includes xmi:id="_HGTcUOX-Ee6qnNc0WpFgLA" base_Dependency="_EjEDgOX-Ee6qnNc0WpFgLA"/>
+  <ImpactProfile:Includes xmi:id="_IDjuwOX-Ee6qnNc0WpFgLA" base_Dependency="_FJPSsOX-Ee6qnNc0WpFgLA"/>
+  <ImpactProfile:Goal xmi:id="_pzZwsOYCEe6qnNc0WpFgLA" Goal="100.0" GoalType="Cost" GoalCheck="LT" base_Class="_kcmrIOYCEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_kcn5QOYCEe6qnNc0WpFgLA" base_Class="_kcmrIOYCEe6qnNc0WpFgLA"/>
+  <Requirements:Verify xmi:id="_HeNzwOYDEe6qnNc0WpFgLA" base_DirectedRelationship="_HeL-kOYDEe6qnNc0WpFgLA" base_Abstraction="_HeL-kOYDEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_vAlhkOdSEe6qnNc0WpFgLA" base_Class="_vAez4OdSEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_y1R7MedSEe6qnNc0WpFgLA" base_Class="_y1R7MOdSEe6qnNc0WpFgLA"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_Ns6sAOdTEe6qnNc0WpFgLA" base_Class="_Hrq7QOdTEe6qnNc0WpFgLA"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_OUYUoOdTEe6qnNc0WpFgLA" base_Class="_KPzE4OdTEe6qnNc0WpFgLA"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_PP-aMOdTEe6qnNc0WpFgLA" base_Class="_LGQy0OdTEe6qnNc0WpFgLA" Domain="Mechanical"/>
+  <Blocks:Block xmi:id="_Hrq7QedTEe6qnNc0WpFgLA" base_Class="_Hrq7QOdTEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_KPzE4edTEe6qnNc0WpFgLA" base_Class="_KPzE4OdTEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_LGVEQOdTEe6qnNc0WpFgLA" base_Class="_LGQy0OdTEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Choice xmi:id="_2MHesOdTEe6qnNc0WpFgLA" Performance="0.43" PerformanceType="MIPS" Power="0.25" base_Class="_nZjCQOdTEe6qnNc0WpFgLA">
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_2nEeq4Ee66Fsb6Z8EBiw" Quantity="1" CostPerPart="96.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_2nEuq4Ee66Fsb6Z8EBiw" Quantity="10" CostPerPart="90.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_2nE-q4Ee66Fsb6Z8EBiw" Quantity="100" CostPerPart="79.0"/>
+  </ImpactProfile:Choice>
+  <ImpactProfile:Choice xmi:id="_2ygwUOdTEe6qnNc0WpFgLA" Performance="0.2" PerformanceType="MIPS" Power="0.2" base_Class="_uIBFYOdTEe6qnNc0WpFgLA">
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_3OIeq4Ee66Fsb6Z8EBiw" Quantity="1" CostPerPart="109.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_3OIuq4Ee66Fsb6Z8EBiw" Quantity="10" CostPerPart="92.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_3OI-q4Ee66Fsb6Z8EBiw" Quantity="100" CostPerPart="79.0"/>
+  </ImpactProfile:Choice>
+  <ImpactProfile:Choice xmi:id="_3W7sAOdTEe6qnNc0WpFgLA" Performance="0.59" PerformanceType="MIPS" Power="0.25" base_Class="_u9O2IOdTEe6qnNc0WpFgLA" Selected="true">
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_3OJeq4Ee66Fsb6Z8EBiw" Quantity="1" CostPerPart="113.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_3OJuq4Ee66Fsb6Z8EBiw" Quantity="10" CostPerPart="102.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_3OJ-q4Ee66Fsb6Z8EBiw" Quantity="100" CostPerPart="96.0"/>
+  </ImpactProfile:Choice>
+  <Blocks:Block xmi:id="_nZk3cOdTEe6qnNc0WpFgLA" base_Class="_nZjCQOdTEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_uIBFYedTEe6qnNc0WpFgLA" base_Class="_uIBFYOdTEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_u9U8wOdTEe6qnNc0WpFgLA" base_Class="_u9O2IOdTEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Choice xmi:id="_WsD70OdUEe6qnNc0WpFgLA" Performance="128.0" PerformanceType="KB" Power="0.333" base_Class="_Uc6jsOdUEe6qnNc0WpFgLA">
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_31Meq4Ee66Fsb6Z8EBiw" Quantity="1" CostPerPart="200.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_31Muq4Ee66Fsb6Z8EBiw" Quantity="10" CostPerPart="195.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_31M-q4Ee66Fsb6Z8EBiw" Quantity="100" CostPerPart="189.0"/>
+  </ImpactProfile:Choice>
+  <ImpactProfile:Choice xmi:id="_XPTLwOdUEe6qnNc0WpFgLA" Performance="256.0" PerformanceType="KB" Power="0.4" base_Class="_VXU9gOdUEe6qnNc0WpFgLA" Selected="true">
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_31Neq4Ee66Fsb6Z8EBiw" Quantity="1" CostPerPart="240.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_31Nuq4Ee66Fsb6Z8EBiw" Quantity="10" CostPerPart="226.0"/>
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_31N-q4Ee66Fsb6Z8EBiw" Quantity="100" CostPerPart="212.0"/>
+  </ImpactProfile:Choice>
+  <Blocks:Block xmi:id="_Uc6jsedUEe6qnNc0WpFgLA" base_Class="_Uc6jsOdUEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_VXWysOdUEe6qnNc0WpFgLA" base_Class="_VXU9gOdUEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Excludes xmi:id="_ce-VoOdUEe6qnNc0WpFgLA" base_Dependency="_beizYOdUEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Goal xmi:id="_LoB7wOdWEe6qnNc0WpFgLA" Goal="400.0" GoalType="Cost" GoalCheck="LTE" base_Class="_JLSMgOdWEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_JLUBsOdWEe6qnNc0WpFgLA" base_Class="_JLSMgOdWEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Excludes xmi:id="_sp72cOdWEe6qnNc0WpFgLA" base_Dependency="_q6DNMOdWEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Excludes xmi:id="_7pBE4OdWEe6qnNc0WpFgLA" base_Dependency="_5nUS4OdWEe6qnNc0WpFgLA"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_7jEYcOdXEe6qnNc0WpFgLA" base_Class="_vMWTYOdXEe6qnNc0WpFgLA" Domain="Software"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_8OD2MOdXEe6qnNc0WpFgLA" base_Class="_ygm5cOdXEe6qnNc0WpFgLA" Domain="Software"/>
+  <Blocks:Block xmi:id="_vMXhgOdXEe6qnNc0WpFgLA" base_Class="_vMWTYOdXEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_ygouoOdXEe6qnNc0WpFgLA" base_Class="_ygm5cOdXEe6qnNc0WpFgLA"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_GpcP8OdYEe6qnNc0WpFgLA" base_Class="_AzSU4OdYEe6qnNc0WpFgLA"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_HYcD8OdYEe6qnNc0WpFgLA" base_Class="_BogFoOdYEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_AzZCkOdYEe6qnNc0WpFgLA" base_Class="_AzSU4OdYEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_BokXEOdYEe6qnNc0WpFgLA" base_Class="_BogFoOdYEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Choice xmi:id="_FVthwOdZEe6qnNc0WpFgLA" base_Class="_TV0b8OdYEe6qnNc0WpFgLA" Selected="true">
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_970eq4Ee66Fsb6Z8EBiw"/>
+  </ImpactProfile:Choice>
+  <ImpactProfile:Choice xmi:id="_F5EtgOdZEe6qnNc0WpFgLA" base_Class="_pa6q0OdYEe6qnNc0WpFgLA">
+    <Costs xmi:type="ImpactProfile:QuantityCost" xmi:id="_B_970-q4Ee66Fsb6Z8EBiw" CostPerPart="4000.0"/>
+  </ImpactProfile:Choice>
+  <ImpactProfile:Choice xmi:id="_GeKXkOdZEe6qnNc0WpFgLA" base_Class="_tUBDUOdYEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Choice xmi:id="_HHaI4OdZEe6qnNc0WpFgLA" base_Class="_uqPPYOdYEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Choice xmi:id="_HsOtMOdZEe6qnNc0WpFgLA" base_Class="_wmrG4OdYEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_TV2RIOdYEe6qnNc0WpFgLA" base_Class="_TV0b8OdYEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_pa8gAOdYEe6qnNc0WpFgLA" base_Class="_pa6q0OdYEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_tUC4gOdYEe6qnNc0WpFgLA" base_Class="_tUBDUOdYEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_uqREkOdYEe6qnNc0WpFgLA" base_Class="_uqPPYOdYEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_wmrG4edYEe6qnNc0WpFgLA" base_Class="_wmrG4OdYEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Includes xmi:id="_nej2YOdZEe6qnNc0WpFgLA" base_Dependency="_mpZwAOdZEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Includes xmi:id="_oTNmcOdZEe6qnNc0WpFgLA" base_Dependency="_mKj34OdZEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Includes xmi:id="_pArJYOdZEe6qnNc0WpFgLA" base_Dependency="_k6EgYOdZEe6qnNc0WpFgLA"/>
+  <ImpactProfile:Goal xmi:id="_THpuAOdhEe6qnNc0WpFgLA" Goal="10.0" GoalType="Power" GoalCheck="LT" base_Class="_QzprEOdhEe6qnNc0WpFgLA"/>
+  <Blocks:Block xmi:id="_QzsHUOdhEe6qnNc0WpFgLA" base_Class="_QzprEOdhEe6qnNc0WpFgLA"/>
+  <Requirements:Verify xmi:id="_m3LzsOdhEe6qnNc0WpFgLA" base_DirectedRelationship="_m3KlkOdhEe6qnNc0WpFgLA" base_Abstraction="_m3KlkOdhEe6qnNc0WpFgLA"/>
+  <ImpactProfile:VariabilityPoint xmi:id="_itWZgAa7Ee-Dv79DJ5pjHA" base_Class="_e305cAa7Ee-Dv79DJ5pjHA" Domain="NA" MutualExclusion="false"/>
+  <Blocks:Block xmi:id="_e4AfoAa7Ee-Dv79DJ5pjHA" base_Class="_e305cAa7Ee-Dv79DJ5pjHA"/>
+  <ImpactProfile:Choice xmi:id="_07aoQAbCEe-Dv79DJ5pjHA" base_Class="_t66Z8AbCEe-Dv79DJ5pjHA"/>
+  <ImpactProfile:Choice xmi:id="_0T8_oAbCEe-Dv79DJ5pjHA" base_Class="_uJ204AbCEe-Dv79DJ5pjHA"/>
+  <Blocks:Block xmi:id="_uJ7tYAbCEe-Dv79DJ5pjHA" base_Class="_uJ204AbCEe-Dv79DJ5pjHA"/>
+  <Blocks:Block xmi:id="_t66Z8QbCEe-Dv79DJ5pjHA" base_Class="_t66Z8AbCEe-Dv79DJ5pjHA"/>
+  <ImpactProfile:Includes xmi:id="_UfINAAbLEe-Dv79DJ5pjHA" base_Dependency="_iKVOMAbKEe-Dv79DJ5pjHA"/>
+  <ImpactProfile:Includes xmi:id="_ViCbgAbLEe-Dv79DJ5pjHA" base_Dependency="_isguMAbKEe-Dv79DJ5pjHA"/>
+  <ImpactProfile:Includes xmi:id="_XXv_8AbLEe-Dv79DJ5pjHA" base_Dependency="_sd0QMAbKEe-Dv79DJ5pjHA"/>
+  <ImpactProfile:Includes xmi:id="_YtecwAbLEe-Dv79DJ5pjHA" base_Dependency="_tD-RQAbKEe-Dv79DJ5pjHA"/>
+</xmi:XMI>
