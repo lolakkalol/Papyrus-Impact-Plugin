@@ -64,7 +64,6 @@ public class ImpactProfileFactoryImpl extends EFactoryImpl implements ImpactProf
 			case ImpactProfilePackage.INCLUDES: return createIncludes();
 			case ImpactProfilePackage.EXCLUDES: return createExcludes();
 			case ImpactProfilePackage.GOAL: return createGoal();
-			case ImpactProfilePackage.QUANTITY_COST_LIST: return createQuantityCostList();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -191,17 +190,6 @@ public class ImpactProfileFactoryImpl extends EFactoryImpl implements ImpactProf
 	public Goal createGoal() {
 		GoalImpl goal = new GoalImpl();
 		return goal;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public QuantityCostList createQuantityCostList() {
-		QuantityCostListImpl quantityCostList = new QuantityCostListImpl();
-		return quantityCostList;
 	}
 
 	/**

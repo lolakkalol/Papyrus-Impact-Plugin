@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * Its goal is to act as a marker for the programmatic traversal that after this comes some choices
+ * The variability point acts as a marker in a variability tree and signals that after this a choice must be made
  * <!-- end-model-doc -->
  *
  * <p>

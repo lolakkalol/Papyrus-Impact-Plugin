@@ -108,9 +108,5 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference ImpactProfile.ecore#//Goal/base_Class"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ImpactProfile.ecore#//QuantityCostList">
-      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference ImpactProfile.ecore#//QuantityCostList/CostList"/>
-    </genClasses>
   </genPackages>
 </genmodel:GenModel>

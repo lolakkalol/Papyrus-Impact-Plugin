@@ -425,43 +425,6 @@ public interface ImpactProfilePackage extends EPackage {
 	int GOAL_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link ImpactProfile.impl.QuantityCostListImpl <em>Quantity Cost List</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ImpactProfile.impl.QuantityCostListImpl
-	 * @see ImpactProfile.impl.ImpactProfilePackageImpl#getQuantityCostList()
-	 * @generated
-	 */
-	int QUANTITY_COST_LIST = 7;
-
-	/**
-	 * The feature id for the '<em><b>Cost List</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUANTITY_COST_LIST__COST_LIST = 0;
-
-	/**
-	 * The number of structural features of the '<em>Quantity Cost List</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUANTITY_COST_LIST_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Quantity Cost List</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUANTITY_COST_LIST_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link ImpactProfile.Domains <em>Domains</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -469,7 +432,7 @@ public interface ImpactProfilePackage extends EPackage {
 	 * @see ImpactProfile.impl.ImpactProfilePackageImpl#getDomains()
 	 * @generated
 	 */
-	int DOMAINS = 8;
+	int DOMAINS = 7;
 
 	/**
 	 * The meta object id for the '{@link ImpactProfile.localBool <em>local Bool</em>}' enum.
@@ -479,7 +442,7 @@ public interface ImpactProfilePackage extends EPackage {
 	 * @see ImpactProfile.impl.ImpactProfilePackageImpl#getlocalBool()
 	 * @generated
 	 */
-	int LOCAL_BOOL = 9;
+	int LOCAL_BOOL = 8;
 
 	/**
 	 * The meta object id for the '{@link ImpactProfile.PerformanceTypes <em>Performance Types</em>}' enum.
@@ -489,7 +452,7 @@ public interface ImpactProfilePackage extends EPackage {
 	 * @see ImpactProfile.impl.ImpactProfilePackageImpl#getPerformanceTypes()
 	 * @generated
 	 */
-	int PERFORMANCE_TYPES = 10;
+	int PERFORMANCE_TYPES = 9;
 
 	/**
 	 * The meta object id for the '{@link ImpactProfile.GoalTypes <em>Goal Types</em>}' enum.
@@ -499,7 +462,7 @@ public interface ImpactProfilePackage extends EPackage {
 	 * @see ImpactProfile.impl.ImpactProfilePackageImpl#getGoalTypes()
 	 * @generated
 	 */
-	int GOAL_TYPES = 11;
+	int GOAL_TYPES = 10;
 
 	/**
 	 * The meta object id for the '{@link ImpactProfile.GoalChecks <em>Goal Checks</em>}' enum.
@@ -509,7 +472,7 @@ public interface ImpactProfilePackage extends EPackage {
 	 * @see ImpactProfile.impl.ImpactProfilePackageImpl#getGoalChecks()
 	 * @generated
 	 */
-	int GOAL_CHECKS = 12;
+	int GOAL_CHECKS = 11;
 
 
 	/**
@@ -790,27 +753,6 @@ public interface ImpactProfilePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getGoal_Base_Class();
-
-	/**
-	 * Returns the meta object for class '{@link ImpactProfile.QuantityCostList <em>Quantity Cost List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Quantity Cost List</em>'.
-	 * @see ImpactProfile.QuantityCostList
-	 * @generated
-	 */
-	EClass getQuantityCostList();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link ImpactProfile.QuantityCostList#getCostList <em>Cost List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Cost List</em>'.
-	 * @see ImpactProfile.QuantityCostList#getCostList()
-	 * @see #getQuantityCostList()
-	 * @generated
-	 */
-	EReference getQuantityCostList_CostList();
 
 	/**
 	 * Returns the meta object for enum '{@link ImpactProfile.Domains <em>Domains</em>}'.
@@ -1106,24 +1048,6 @@ public interface ImpactProfilePackage extends EPackage {
 		 * @generated
 		 */
 		EReference GOAL__BASE_CLASS = eINSTANCE.getGoal_Base_Class();
-
-		/**
-		 * The meta object literal for the '{@link ImpactProfile.impl.QuantityCostListImpl <em>Quantity Cost List</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ImpactProfile.impl.QuantityCostListImpl
-		 * @see ImpactProfile.impl.ImpactProfilePackageImpl#getQuantityCostList()
-		 * @generated
-		 */
-		EClass QUANTITY_COST_LIST = eINSTANCE.getQuantityCostList();
-
-		/**
-		 * The meta object literal for the '<em><b>Cost List</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference QUANTITY_COST_LIST__COST_LIST = eINSTANCE.getQuantityCostList_CostList();
 
 		/**
 		 * The meta object literal for the '{@link ImpactProfile.Domains <em>Domains</em>}' enum.

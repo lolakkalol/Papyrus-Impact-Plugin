@@ -12,8 +12,7 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * Marks that the block that this stereotype is marked to is 1) mutualy exclusive with all other blocks on the same level and stereotype 2) that it is a choice 
- * 
+ * This is the choice stereotype and holds the general characteristics of the choice, must be attached to a variability point through a generalisation edge pointing at the variability point
  * <!-- end-model-doc -->
  *
  * <p>

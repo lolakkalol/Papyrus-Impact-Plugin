@@ -10,7 +10,10 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * Used on classes to set goals that either variabilitypoints or  their parents should achive
+ * Used to set goals on variability points or entire systems, will look at the choices of its targets to determin if it is satisfied or not. 
+ * If the goal has multiple targets only one target needs to be satisfied for the goal to be satisfied. 
+ * If the target is on a variability point the sum of the porperty GoalType in the choices need to satisfy the goal. 
+ * If the target is a system all contained variability point must satisfy the goal.
  * <!-- end-model-doc -->
  *
  * <p>

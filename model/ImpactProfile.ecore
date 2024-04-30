@@ -4,7 +4,7 @@
     nsPrefix="ImpactProfile">
   <eClassifiers xsi:type="ecore:EClass" name="VariabilityPoint">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="Its goal is to act as a marker for the programmatic traversal that after this comes some choices"/>
+      <details key="documentation" value="The variability point acts as a marker in a variability tree and signals that after this a choice must be made"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
@@ -25,7 +25,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Choice">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="Marks that the block that this stereotype is marked to is 1) mutualy exclusive with all other blocks on the same level and stereotype 2) that it is a choice &#xD;&#xA;"/>
+      <details key="documentation" value="This is the choice stereotype and holds the general characteristics of the choice, must be attached to a variability point through a generalisation edge pointing at the variability point"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Performance" ordered="false"
         lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Real"/>
@@ -83,7 +83,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Goal">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="Used on classes to set goals that either variabilitypoints or  their parents should achive"/>
+      <details key="documentation" value="Used to set goals on variability points or entire systems, will look at the choices of its targets to determin if it is satisfied or not. &#xD;&#xA;If the goal has multiple targets only one target needs to be satisfied for the goal to be satisfied. &#xD;&#xA;If the target is on a variability point the sum of the porperty GoalType in the choices need to satisfy the goal. &#xD;&#xA;If the target is a system all contained variability point must satisfy the goal."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Goal" ordered="false" lowerBound="1"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Real"/>
@@ -107,9 +107,5 @@
     <eLiterals name="LTE" value="3"/>
     <eLiterals name="EQ" value="4"/>
     <eLiterals name="NA" value="5"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QuantityCostList">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="CostList" ordered="false"
-        lowerBound="1" upperBound="-1" eType="#//QuantityCost" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>

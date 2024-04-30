@@ -85,15 +85,6 @@ public interface ImpactProfileFactory extends EFactory {
 	Goal createGoal();
 
 	/**
-	 * Returns a new object of class '<em>Quantity Cost List</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Quantity Cost List</em>'.
-	 * @generated
-	 */
-	QuantityCostList createQuantityCostList();
-
-	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

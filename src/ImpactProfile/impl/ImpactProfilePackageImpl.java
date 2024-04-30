@@ -13,7 +13,6 @@ import ImpactProfile.ImpactProfilePackage;
 import ImpactProfile.Includes;
 import ImpactProfile.PerformanceTypes;
 import ImpactProfile.QuantityCost;
-import ImpactProfile.QuantityCostList;
 import ImpactProfile.VariabilityModel;
 import ImpactProfile.VariabilityPoint;
 import ImpactProfile.localBool;
@@ -86,13 +85,6 @@ public class ImpactProfilePackageImpl extends EPackageImpl implements ImpactProf
 	 * @generated
 	 */
 	private EClass goalEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass quantityCostListEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -460,26 +452,6 @@ public class ImpactProfilePackageImpl extends EPackageImpl implements ImpactProf
 	 * @generated
 	 */
 	@Override
-	public EClass getQuantityCostList() {
-		return quantityCostListEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getQuantityCostList_CostList() {
-		return (EReference)quantityCostListEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EEnum getDomains() {
 		return domainsEEnum;
 	}
@@ -586,9 +558,6 @@ public class ImpactProfilePackageImpl extends EPackageImpl implements ImpactProf
 		createEAttribute(goalEClass, GOAL__GOAL_CHECK);
 		createEReference(goalEClass, GOAL__BASE_CLASS);
 
-		quantityCostListEClass = createEClass(QUANTITY_COST_LIST);
-		createEReference(quantityCostListEClass, QUANTITY_COST_LIST__COST_LIST);
-
 		// Create enums
 		domainsEEnum = createEEnum(DOMAINS);
 		localBoolEEnum = createEEnum(LOCAL_BOOL);
@@ -663,9 +632,6 @@ public class ImpactProfilePackageImpl extends EPackageImpl implements ImpactProf
 		initEAttribute(getGoal_GoalType(), this.getGoalTypes(), "GoalType", "NA", 1, 1, Goal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getGoal_GoalCheck(), this.getGoalChecks(), "GoalCheck", "NA", 1, 1, Goal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getGoal_Base_Class(), theUMLPackage.getClass_(), null, "base_Class", null, 0, 1, Goal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(quantityCostListEClass, QuantityCostList.class, "QuantityCostList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getQuantityCostList_CostList(), this.getQuantityCost(), null, "CostList", null, 1, -1, QuantityCostList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(domainsEEnum, Domains.class, "Domains");

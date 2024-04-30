@@ -96,10 +96,6 @@ public class ImpactProfileAdapterFactory extends AdapterFactoryImpl {
 				return createGoalAdapter();
 			}
 			@Override
-			public Adapter caseQuantityCostList(QuantityCostList object) {
-				return createQuantityCostListAdapter();
-			}
-			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -214,20 +210,6 @@ public class ImpactProfileAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGoalAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImpactProfile.QuantityCostList <em>Quantity Cost List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImpactProfile.QuantityCostList
-	 * @generated
-	 */
-	public Adapter createQuantityCostListAdapter() {
 		return null;
 	}
 
