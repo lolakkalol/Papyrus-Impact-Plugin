@@ -93,8 +93,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+![image](https://github.com/lolakkalol/Papyrus-Impact-Plugin/assets/23548892/9a2e4ef8-c781-40d7-a571-f9f5ce5806f2)
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 This plugin implements a UML2 meta-model to create variable product composition diagrams using the SysML block definition diagrams.
 The plugin also implements a new view called the "Impact tool," which uses the information provided by the meta-model to check constraints, goals, requirements, and more.
 To use the impact tool, one must follow the rules to ensure that the assumption it makes still holds. While this is made with the use of papyrus in mind, it should work with any model created using UML2, as the plugin only relies on UML2 APIs but has not been tested.
