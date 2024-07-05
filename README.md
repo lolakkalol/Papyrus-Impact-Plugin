@@ -99,7 +99,7 @@ This plugin implements a UML2 meta-model to create variable product composition 
 The plugin also implements a new view called the "Impact tool," which uses the information provided by the meta-model to check constraints, goals, requirements, and more.
 To use the impact tool, one must follow the rules to ensure that the assumption it makes still holds. While this is made with the use of papyrus in mind, it should work with any model created using UML2, as the plugin only relies on UML2 APIs but has not been tested.
 
-For more information on how the meta-model, tool, and method can be used to perform impact analysis, see: [Link to thesis (Not uploaded yet)](http://example.com/)
+For more information on how the meta-model, tool, and method can be used to perform impact analysis, see: [Link to thesis](https://urn.kb.se/resolve?urn=urn:nbn:se:mdh:diva-67242)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -210,7 +210,7 @@ If you so wish to change or add to the impact API simply edit the files under `s
 ### Modify the impact view
 As the view is simply composed of SWT components which call the impact APIs simply change `src/com/alexander/thesis/tool/View.java` and reexport the JAR file to create a standalone plugin, or create a launch configuration to launch a new instance of eclipse with the plugin.
 
-See [Link to thesis](http://example.com/) to understand how to use the plugin.
+See [Link to thesis](https://urn.kb.se/resolve?urn=urn:nbn:se:mdh:diva-67242) to understand how to use the plugin.
 
 <!-- USAGE EXAMPLES -->
 ## Meta-Model
@@ -243,7 +243,7 @@ To add to the `Goal` stereotype, constraints which limit the allowed selection o
 
 ![image](https://github.com/lolakkalol/Papyrus-Impact-Plugin/assets/23548892/5877b4e4-1698-4634-af40-8dfc45e4e1f1)
 
-See [Link to thesis](http://example.com/)
+See [Link to thesis](https://urn.kb.se/resolve?urn=urn:nbn:se:mdh:diva-67242)
 </details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
